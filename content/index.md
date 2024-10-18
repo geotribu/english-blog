@@ -19,7 +19,7 @@ tags:
 ![Geotribu logo](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "Geotribu logo"){: .img-thumbnail-left }
 
 From a strictly formal point of view, Geotribu is a [domain name](https://en.wikipedia.org/wiki/Domain_name). And three suffixes (.fr, .net, and .org, while the [.com has long been squatted](https://www.whois.com/whois/geotribu.com) waiting for us to become [rich](https:/geotribu.geotribu.com/www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)).  
-There is no structure: neither entrepreneurial, nor associative, nor a blood pact in a tipi. In fact, the agreement for loaning the server used to [host images]({{ config.extra.url_contribuer }}guides/cdn-images-hebergement/) from [GeoRezo] is in Julien’s name, and the [domain is owned by Fabien](https://www.whois.com/whois/geotribu.net).
+There is no structure: neither entrepreneurial, nor associative, nor a blood pact in a tipi. In fact, the agreement for loaning the server used to [host images](https://contribuer.geotribu.fr/guides/cdn-images-hebergement/) from [GeoRezo] is in Julien’s name, and the [domain is owned by Fabien](https://www.whois.com/whois/geotribu.net).
 
 It’s a spontaneous gathering of people around a shared professional interest: the geographic aspect of each person’s profession. Then comes the "editorial" line, set from the beginning, which I present as two sides of the same coin:
 
