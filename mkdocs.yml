@@ -1,8 +1,8 @@
 # Project information
-site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu"]
+site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu in English"]
 site_description: >-
   Independent and collaborative website on free and open-source geomatics.  
-  Articles, tutorials, about geographic information, GIS, mapping, data visualization...
+  Articles, tutorials, news about GIS, mapping, data visualization...
 
 site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
 site_url: !ENV [MKDOCS_SITE_URL, "https://blog.geotribu.net/"]
@@ -61,7 +61,7 @@ plugins:
       cards_layout_options:
         background_color: "#00000000"
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
-        color: "#3e93a7"
+        color: "#56c29e"
         font_family: Ubuntu
   - tags:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
@@ -74,7 +74,7 @@ plugins:
 theme:
   name: "material"
   custom_dir: "./content/theme/"
-  favicon: theme/assets/images/geotribu/logo_geotribu.png
+  favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
 
   features:
     - content.action.edit
@@ -97,7 +97,7 @@ theme:
     code: Ubuntu Mono
     text: Ubuntu
   language: en
-  logo: theme/assets/images/geotribu/logo_geotribu.png
+  logo: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"

@@ -19,7 +19,7 @@ tags:
     - QChat
     - QGIS
     - QTribu
-title: "Introducing QChat: a chat to collaborate directly within QGIS!"
+title: "Introducing QChat: a chat within QGIS!"
 subtitle: Bring your GIS conversations to life with QChat in QGIS
 ---
 
