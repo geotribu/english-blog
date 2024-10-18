@@ -4,7 +4,8 @@ authors:
   - jmoura
 categories:
   - Announcements
-date: 2024-10-21
+comments: true
+date: 2024-10-18
 description: "In 2024, it's time to leave Teams and IRC behind to enter a new era where you can chat directly from QGIS with other GIS fellows. #GISChat #GISTribe"
 icon: material/chat
 license: beerware
@@ -119,7 +120,9 @@ Now, let's move to the `QChat` settings section:
 - `play sounds`: toggle to play a sound when you're mentioned by another user. If enabled, you can adjust the volume and choose a notification sound.
 - customize chat message colors with three color settings
 
-## let's start chatting
+----
+
+## Let's start chatting
 
 QTribu chat is included in a [dock widget](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QDockWidget.html), meaning you can move and dock it wherever you like in the QGIS interface. To open the chat, you can either:
 
@@ -146,17 +149,19 @@ Note that:
 - using `@all` in your message will notify all users in the room via the QGIS message bar
 - double-clicking a message in QTribu chat will allow you to mention the user who sent it
 
-## want to go further?
+----
+
+## Want to go further?
 
 We've seen the client side of QTribu chat in QGIS. To route the messages through WebSockets, there’s also a backend. [The GitHub repository is available here](https://github.com/geotribu/gischat).
 
-### set up your own instance
+### Set up your own instance
 
 If you'd like to set up your own QTribu chat backend, [you can follow the instructions on the repository](https://github.com/geotribu/gischat#deploy-a-self-hosted-instance). There's no need for a database, as it’s stateless and simply relies on WebSockets. It’s a [simple Docker image](https://hub.docker.com/r/gounux/gischat) that runs with a few environment variables.
 
 There's also [a directory of QTribu chat instances](https://github.com/geotribu/gischat/blob/main/instances.json), which you can contribute to if you set up your own instance, making it visible and available to others. The `discover instances` button in the plugin settings opens this directory in a QGIS popup.
 
-### develop a compatible client
+### Develop a compatible client
 
 If you’re interested in developing a compatible client, you can check out [the developer information on the GitHub repository](https://github.com/geotribu/gischat#developer-information).
 
@@ -169,6 +174,8 @@ Messages are sent over WebSocket, and there are [a few routes available](https:/
 
 And more features coming soon :wink:
 
-## conclusion
+----
+
+## Conclusion
 
 QTribu chat is like having a virtual coffee corner, where technical discussions meet geographer jokes (the kind that only insiders find funny). So why not install QTribu chat today and turn your QGIS experience into a collaborative adventure? After all, who said mapping had to be boring? With QTribu chat, every map becomes a shared story, and every project an opportunity to laugh together. Ready to map and chat?

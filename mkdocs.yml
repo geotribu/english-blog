@@ -10,8 +10,8 @@ copyright:
   !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 
 # Repository
-repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/english-blogs"]
-repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/english-blogs"]
+repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/english-blog"]
+repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/english-blog"]
 edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/main/content"]
 
 # Custom folder structure
