@@ -1,7 +1,7 @@
 # Project information
 site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu"]
 site_description: >-
-  Independent and collaborative website on free and open-source geomatics.  
+  Independent and collaborative website on free and open-source geomatics.
   Articles, tutorials, about geographic information, GIS, mapping, data visualization...
 
 site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
