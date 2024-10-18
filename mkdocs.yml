@@ -21,6 +21,7 @@ site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 # Plugins
 plugins:
   - blog:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_BLOG, true]
       archive_name: By dates
       archive_url_date_format: yyyy/MM
       archive_url_format: "{date}"
