@@ -30,19 +30,6 @@ plugins:
       draft_on_serve: true
       draft_if_future_date: true
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
-  - glightbox:
-      auto_caption: true
-      caption_position: bottom
-      draggable: true
-      effect: zoom
-      height: auto
-      skip_classes:
-        - img-rdp-news-thumb
-        - emojione
-        - twemoji
-      touchNavigation: true
-      width: 90%
-      zoomable: true
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       cache_dir:
@@ -76,24 +63,6 @@ plugins:
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
         color: "#3e93a7"
         font_family: Ubuntu
-  - rss:
-      cache_dir: !ENV [MKDOCS_PLUGIN_RSS_CACHE_DIR, .cache/plugins/rss]
-      categories:
-        - categories
-        - tags
-      comments_path: "#__comments"
-      date_from_meta:
-        as_creation: date
-        default_timezone: Europe/Paris
-        default_time: "09:09"
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, true]
-      length: 50
-      match_path: blog/posts/.*
-      pretty_print: false
-      url_parameters:
-        utm_source: "rss-feed"
-        utm_medium: "RSS"
-        utm_campaign: "feed-syndication"
   - tags:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
@@ -157,6 +126,7 @@ theme:
 # Customization
 extra:
   comments_url: https://comments.geotribu.fr # isso url
+  geotribu_main_site: https://geotribu.fr/
   url_contribuer: https://contribuer.geotribu.fr/
 
 extra_css:

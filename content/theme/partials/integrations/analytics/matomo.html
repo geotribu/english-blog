@@ -2,7 +2,7 @@
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-    _paq.push(["setDomains", ["*.contribuer.geotribu.fr", "*.contribuer.geotribu.fr", "*.geotribu.github.io/site-contribuer"]]);
+    _paq.push(["setDomains", ["*.blog.geotribu.net", "*.blog.geotribu.net", "*.geotribu.github.io/english-blog"]]);
     _paq.push(["enableCrossDomainLinking"]);
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
@@ -16,6 +16,7 @@
     })();
 </script>
 <noscript>
-    <p><img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.data-wax.com/matomo.php?idsite=5&amp;rec=1"
+    <p><img referrerpolicy="no-referrer-when-downgrade"
+            src="https://matomo.data-wax.com/matomo.php?idsite={{ config.extra.analytics.matomo_site_id }}&amp;rec=1"
             style="border:0;" alt="" /></p>
 </noscript>

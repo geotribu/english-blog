@@ -1,0 +1,17 @@
+analytics:
+  provider: matomo
+  matomo_url: !ENV [MKDOCS_MATOMO_URL_BASE, "https://matomo.data-wax.com"]
+  matomo_site_id: !ENV [MKDOCS_MATOMO_SITE_ID, 8]
+  feedback:
+    title: Was this page helpful?
+    ratings:
+      - icon: material/heart-half-outline
+        name: This page was helpful
+        data: 1
+        note: >-
+          Thanks for your feedback!
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+        note: >-
+          Thanks for your feedback!
