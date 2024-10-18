@@ -30,6 +30,7 @@ plugins:
       draft_on_serve: true
       draft_if_future_date: true
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
+      post_date_format: long
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       cache_dir:
@@ -84,9 +85,10 @@ theme:
     - content.footnote.tooltips
     - content.tabs.link
     - content.tooltips
+    - header.autohide
+    - navigation.indexes
     - navigation.path
-    - navigation.prune
-    - navigation.tabs
+    # - navigation.tabs
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -177,3 +179,8 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
+
+nav:
+  - Blog:
+      - blog/index.md
+  - index.md

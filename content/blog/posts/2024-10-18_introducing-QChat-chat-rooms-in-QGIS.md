@@ -55,9 +55,7 @@ Introducing a new way to chat directly in QGIS: `QChat`, a feature that lets you
 
 Our answer: why not? :grin:
 
-The #GISChat, born on Twitter and now on Mastodon, BlueSky, and even LinkedIn, enables interaction on geomatics-related topics.
-
-There have already been initiatives to bring all this together in a [web application](https://gis.chat/).
+The #GISChat, born on Twitter and now on [Mastodon](https://mapstodon.space/tags/gischat), [BlueSky](https://bsky.app/hashtag/gischat), and even [LinkedIn](https://www.linkedin.com/feed/hashtag/gischat/), enables interaction on geomatics-related topics. There have already been initiatives to bring all this together in a [web application](https://gis.chat/).
 
 And then, concerning the QGIS project in particular, there are already communication channels all over the place: [mailing lists](https://qgis.org/community/organisation/mailinglists/), [Telegram](https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ), [Discourse](https://discourse.osgeo.org/c/qgis/11), Signal, WhatsApp... But not right in QGIS! Too bad, isn't it?
 
