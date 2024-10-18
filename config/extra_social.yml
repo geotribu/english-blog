@@ -1,0 +1,25 @@
+social:
+  - icon: "fontawesome/solid/rss"
+    link: https://blog.geotribu.net/feed_rss_created.xml
+    name: Subscribe to newly published contents
+  - icon: "fontawesome/brands/github-alt"
+    link: "https://github.com/geotribu/"
+    name: Geotribu on GitHub
+  - icon: "fontawesome/brands/mastodon"
+    link: https://mapstodon.space/@geotribu
+    name: Geotribu on Mastodon
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/company/geotribu/
+    name: Geotribu on LinkedIn
+  - icon: fontawesome/brands/bluesky
+    link: https://bsky.app/profile/geotribu.bsky.social
+    name: Geotribu on BlueSky
+  - icon: fontawesome/brands/youtube
+    link: https://www.youtube.com/@geotribu
+    name: Youtube channel of Geotribu
+  - icon: fontawesome/solid/paper-plane
+    link: mailto:<geotribu@gmail.com>
+    name: Contact us
+  - icon: simple/liberapay
+    link: https://liberapay.com/Geotribu/
+    name: Support the project

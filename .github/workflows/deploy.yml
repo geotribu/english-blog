@@ -60,6 +60,7 @@ jobs:
 
       - name: Build static website
         run: |
+          python scripts/100_mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
           MKDOCS_ENABLE_PLUGIN_BLOG: true
