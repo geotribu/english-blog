@@ -79,7 +79,7 @@ You can find the plugin [on the official repository](https://plugins.qgis.org/pl
 
 ![WebSocket logo](https://cdn.geotribu.fr/img/logos-icones/divers/websocket.png){: .img-thumbnail-left }
 
-QTribu chat relies on [the WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) (we mentioned it back in [2013](../2013/2013-02-25_websocket.md "WebSockets and Cartography")), using components of the Qt framework that QGIS is based on. These components are included in the Windows versions of QGIS but must be installed manually on Linux. For example, on Ubuntu (22.04):
+QTribu chat relies on [the WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket), using components of the Qt framework that QGIS is based on. These components are included in the Windows versions of QGIS but must be installed manually on Linux. For example, on Ubuntu (22.04):
 
 ```sh title="apt command to install additional Qt dependencies on Debian/Ubuntu"
 sudo apt install python3-pyqt5.qtmultimedia python3-pyqt5.qtwebengine python3-pyqt5.qtwebsockets
@@ -104,7 +104,7 @@ Now, let's take a look at the main settings, starting with the `Attribution info
 
 - `QChat nickname`: this is your nickname, shown to other chat users. It can be between 3 and 32 alphanumeric characters. Time to get creative (note: `xX_D4rth_L4mb3rt_Xx` and `B3rt1n_Le_ouf_du_78` are already taken).
 
-- `QChat avatar`: this is the symbolic [icon](../2023/2023-04-23_pyqgis-resource-browser-icones-qgis-plugin.md) representing you in the chat. You can choose one of the fanciest icons from QGIS, and your avatar will be displayed next to every message you send.
+- `QChat avatar`: this is the symbolic icon representing you in the chat. You can choose one of the fanciest icons from QGIS, and your avatar will be displayed next to every message you send.
 
 Now, let's move to the `QChat` settings section:
 
