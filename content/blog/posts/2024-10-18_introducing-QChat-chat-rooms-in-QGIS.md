@@ -31,7 +31,7 @@ We're excited to announce the release of a new feature integrated into our [QTri
 
 We're in 2024 (unless you're reading this in 2025, or 2026, or... well, you get the idea), and let's be honest, Teams or IRC are outdated. Plus, you can't even use the hashtag #GISchat there, you can't meet fellow GIS enthusiasts and you definitely can't win Geotribu stickers :wink:... Honestly, it's time for something new.
 
-Introducing a new way to chat directly in QGIS: `QTribu chat`, a feature that lets you communicate with your peers within the best desktop GIS software around. The question is: why? And the answer: why not?
+Introducing a new way to chat directly in QGIS: `QChat`, a feature that lets you communicate with your peers within the best desktop GIS software around. The question is: why? And the answer: why not?
 
 <!-- more -->
 
@@ -57,11 +57,9 @@ Our answer: why not? :grin:
 
 The #GISChat, born on Twitter and now on Mastodon, BlueSky, and even LinkedIn, enables interaction on geomatics-related topics.
 
-There have already been initiatives to bring all this together in a web application (<https://gis.chat/>).
+There have already been initiatives to bring all this together in a [web application](https://gis.chat/).
 
-And then, concerning the QGIS project in particular, there are already communication channels all over the place: mailing lists, Telegram, Discourse, Signal, WhatsApp... But not in QGIS! Too bad, isn't it?
-
-Translated with DeepL.com (free version)
+And then, concerning the QGIS project in particular, there are already communication channels all over the place: [mailing lists](https://qgis.org/community/organisation/mailinglists/), [Telegram](https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ), [Discourse](https://discourse.osgeo.org/c/qgis/11), Signal, WhatsApp... But not right in QGIS! Too bad, isn't it?
 
 ----
 
@@ -69,9 +67,7 @@ Translated with DeepL.com (free version)
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
 
-QChat is part of the `QTribu` plugin, developed by Geotribu.
-
-You can find the plugin [on the official repository](https://plugins.qgis.org/plugins/qtribu). QTribu chat is available starting from version 1.0 of the plugin, which can be installed via the QGIS plugin manager:
+QChat is part of the QTribu plugin, published [on the official repository](https://plugins.qgis.org/plugins/qtribu). QChat is available starting from version 1.0 of the plugin, which can be installed via the QGIS plugin manager:
 
 ![QGIS - QTribu plugin installation in the QGIS plugin manager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qtribu_install.webp){: .img-center loading=lazy }
 
@@ -79,13 +75,13 @@ You can find the plugin [on the official repository](https://plugins.qgis.org/pl
 
 ![WebSocket logo](https://cdn.geotribu.fr/img/logos-icones/divers/websocket.png){: .img-thumbnail-left }
 
-QTribu chat relies on [the WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket), using components of the Qt framework that QGIS is based on. These components are included in the Windows versions of QGIS but must be installed manually on Linux. For example, on Ubuntu (22.04):
+QChat relies on [the WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket), using components of the Qt framework that QGIS is based on. These components are included in the Windows versions of QGIS but must be installed manually on Linux. For example, on Ubuntu (22.04):
 
 ```sh title="apt command to install additional Qt dependencies on Debian/Ubuntu"
 sudo apt install python3-pyqt5.qtmultimedia python3-pyqt5.qtwebengine python3-pyqt5.qtwebsockets
 ```
 
-If these dependencies are not installed, QTribu chat will be disabled in the plugin, and an error message will direct you to [the installation documentation](https://qtribu.geotribu.fr/installation.html#linux).
+If these dependencies are not installed, QChat will be disabled in the plugin, and an error message will direct you to [the installation documentation](https://qtribu.geotribu.fr/installation.html#linux).
 
 ----
 
@@ -110,9 +106,9 @@ Now, let's move to the `QChat` settings section:
 
 ![QChat settings screen for QTribu plugin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_settings.webp){: .img-center loading=lazy }
 
-- `instance URL`: this specifies which QTribu chat instance you want to connect to. The instance rules can be checked via the `instance rules` button. As of now, two instances are available:
-    - `gischat.geotribu.net`: Geotribu's English-language QTribu chat instance, for everyone
-    - `gischat.geotribu.fr`: Geotribu's French-language QTribu chat instance, also for everyone
+- `instance URL`: this specifies which QChat instance you want to connect to. The instance rules can be checked via the `instance rules` button. As of now, two instances are available:
+    - `gischat.geotribu.net`: Geotribu's English-language QChat instance, for everyone
+    - `gischat.geotribu.fr`: Geotribu's French-language QChat instance, also for everyone
 
 - `show avatars`: toggle to show or hide avatars next to chat messages
 - `show admin messages`: toggle to display admin messages such as user connections and disconnections
@@ -124,14 +120,14 @@ Now, let's move to the `QChat` settings section:
 
 ## Let's start chatting
 
-QTribu chat is included in a [dock widget](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QDockWidget.html), meaning you can move and dock it wherever you like in the QGIS interface. To open the chat, you can either:
+QChat is included in a [dock widget](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QDockWidget.html), meaning you can move and dock it wherever you like in the QGIS interface. To open the chat, you can either:
 
 - go to the menu `Internet` > `QTribu` > `QChat`
 - click on the second icon (a speech bubble) in the toolbar:
 
 ![QTribu plugin toolbar with QChat icon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_icons.png){: .img-center loading=lazy }
 
-And there you have it: QTribu chat is open :tada: :
+And there you have it: QChat is open :tada: :
 
 ![QGIS screen with QChat panel on the right](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_qgis.webp){: .img-center loading=lazy }
 
@@ -142,24 +138,24 @@ In the `instance` section at the top, you can view the rules of the configured i
 
 To start chatting, you'll need to connect to a room by selecting one from the dropdown list. Once connected, you're ready to chat! Messages from other users will appear in the middle:
 
-![QGIS screen with chat messages in QTribu chat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_messages.webp)
+![QGIS screen with chat messages in QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_messages.webp)
 
 Note that:
 
 - using `@all` in your message will notify all users in the room via the QGIS message bar
-- double-clicking a message in QTribu chat will allow you to mention the user who sent it
+- double-clicking a message in QChat will allow you to mention the user who sent it
 
 ----
 
 ## Want to go further?
 
-We've seen the client side of QTribu chat in QGIS. To route the messages through WebSockets, there’s also a backend. [The GitHub repository is available here](https://github.com/geotribu/gischat).
+We've seen the client side of QChat in QGIS. To route the messages through WebSockets, there’s also a backend. [The GitHub repository is available here](https://github.com/geotribu/gischat).
 
 ### Set up your own instance
 
-If you'd like to set up your own QTribu chat backend, [you can follow the instructions on the repository](https://github.com/geotribu/gischat#deploy-a-self-hosted-instance). There's no need for a database, as it’s stateless and simply relies on WebSockets. It’s a [simple Docker image](https://hub.docker.com/r/gounux/gischat) that runs with a few environment variables.
+If you'd like to set up your own QChat backend, [you can follow the instructions on the repository](https://github.com/geotribu/gischat#deploy-a-self-hosted-instance). There's no need for a database, as it’s stateless and simply relies on WebSockets. It’s a [simple Docker image](https://hub.docker.com/r/gounux/gischat) that runs with a few environment variables.
 
-There's also [a directory of QTribu chat instances](https://github.com/geotribu/gischat/blob/main/instances.json), which you can contribute to if you set up your own instance, making it visible and available to others. The `discover instances` button in the plugin settings opens this directory in a QGIS popup.
+There's also [a directory of QChat instances](https://github.com/geotribu/gischat/blob/main/instances.json), which you can contribute to if you set up your own instance, making it visible and available to others. The `discover instances` button in the plugin settings opens this directory in a QGIS popup.
 
 ### Develop a compatible client
 
@@ -178,4 +174,4 @@ And more features coming soon :wink:
 
 ## Conclusion
 
-QTribu chat is like having a virtual coffee corner, where technical discussions meet geographer jokes (the kind that only insiders find funny). So why not install QTribu chat today and turn your QGIS experience into a collaborative adventure? After all, who said mapping had to be boring? With QTribu chat, every map becomes a shared story, and every project an opportunity to laugh together. Ready to map and chat?
+QChat is like having a virtual coffee corner, where technical discussions meet geographer jokes (the kind that only insiders find funny). So why not install QChat today and turn your QGIS experience into a collaborative adventure? After all, who said mapping had to be boring? With QChat, every map becomes a shared story, and every project an opportunity to laugh together. Ready to map and chat?
