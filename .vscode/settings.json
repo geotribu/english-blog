@@ -1,0 +1,55 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "files.associations": {
+        "./content/theme/overrides/**/*.html": "jinja",
+        ".content/**/.pages": "yaml"
+    },
+    // Git
+    "git.allowNoVerifyCommit": true,
+    "git.autoStash": true,
+    "git.fetchOnPull": true,
+    "git.mergeEditor": true,
+    "git.pruneOnFetch": true,
+    "git.pullBeforeCheckout": true,
+    "git.rebaseWhenSync": true,
+    "git.replaceTagsWhenPull": true,
+    "git.repositoryScanIgnoredFolders": [
+        "node_modules",
+        ".venv",
+        ".cache",
+        "build"
+    ],
+    "git.smartCommitChanges": "tracked",
+    // Markdown
+    "markdown.updateLinksOnFileMove.enabled": "prompt",
+    "markdown.updateLinksOnFileMove.enableForDirectories": true,
+    "markdown.validate.enabled": true,
+    "markdown.validate.fileLinks.markdownFragmentLinks": "warning",
+    "markdown.validate.fragmentLinks.enabled": "warning",
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    // Extensions
+    "yaml.customTags": [
+        "!ENV scalar",
+        "!ENV sequence",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.casefold",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.page_url",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.tag_name_casefold",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.item_url"
+    ],
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
+        "https://json.schemastore.org/github-issue-forms.json": ".github/ISSUE_TEMPLATE/ARTICLE.yml"
+    }
+}

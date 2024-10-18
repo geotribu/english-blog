@@ -1,0 +1,14 @@
+# see: https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.authors_file
+authors:
+  gallaman:
+    avatar: https://avatars.githubusercontent.com/u/40383801
+    description: GIS developer of fun
+    name: Guilhem Allaman
+    slug: guilhem-allaman
+    url: https://geotribu.fr/team/guilhem-allaman/
+  jmoura:
+    avatar: https://cdn.geotribu.fr/img/internal/contributeurs/jmou.jfif
+    description: GIS Watchman
+    name: Julien Moura
+    slug: julien-moura
+    url: https://geotribu.fr/team/julien-moura/

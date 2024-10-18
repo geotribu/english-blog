@@ -1,0 +1,128 @@
+name: "📝 Article Proposal"
+description: "Article proposal form for Geotribu."
+labels: ["external contribution", "article", "triage"]
+assignees:
+  - gounux
+  - guts
+  - igeofr
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to contribute to Geotribu!
+        The submission guide and article structure [can be found here](https://contribuer.geotribu.fr/articles/workflow/).
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+        # About You
+
+  - type: checkboxes
+    id: cb_author_content_relationship
+    attributes:
+      label: "Do you have a personal connection to the proposed content?"
+      description: Is this highlighting the work of a third party? Self-promotion? Advertising?
+      options:
+        - label: Yes
+        - label: No
+    validations:
+      required: true
+
+  - type: input
+    id: in_author_name
+    attributes:
+      label: Your Name
+      description: Please provide your First Last name (pseudonym is accepted) under which you are signing the article (see [signing your contributions](https://contribuer.geotribu.fr/guides/authoring/#signer-pour-quelquun-dautre)).
+      placeholder: e.g., "John DOE"
+    validations:
+      required: true
+
+  - type: input
+    id: in_author_mail
+    attributes:
+      label: Your Email Address
+      description: Please provide your email address so we can sign the article (see [signing your contributions](https://contribuer.geotribu.fr/guides/authoring/#signer-pour-quelquun-dautre)).
+      placeholder: e.g., pseudo.nyme [at] my-organization.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dr_author_license
+    attributes:
+      label: License
+      description: |
+        Choose the license that suits you best. See [the guide](https://contribuer.geotribu.fr/guides/licensing/).
+      options:
+        - "Creative Commons International BY-NC-SA 4.0"
+        - "Creative Commons International BY-SA 4.0"
+        - "Beerware (Revision 42)"
+        - "other - please specify in the free text field at the end of the form"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+        # The Article
+
+  - type: input
+    id: in_art_title
+    attributes:
+      label: Title
+      description: "The title of the article. Maximum length: 100/120 characters."
+    validations:
+      required: true
+
+  - type: input
+    id: in_art_description
+    attributes:
+      label: Short Description
+      description: "A 160-character maximum description summarizing the article, to be included in the [RSS feed](https://geotribu.fr/feed_rss_created.xml), the [newsletter](https://us5.campaign-archive.com/home/?u=465e16ce303f65e4f490e8a71&id=6c4efaf092), search engines, homepage, etc. Think in terms of SEO!"
+    validations:
+      required: true
+
+  - type: input
+    id: in_art_tags
+    attributes:
+      label: Keywords
+      description: |
+        List of keywords separated by commas.
+        Preferably, choose from the [existing keywords](https://geotribu.fr/tags/).
+    validations:
+      required: true
+
+  - type: input
+    id: in_art_date
+    attributes:
+      label: Planned Publication Date
+      description: |
+        For your information, we typically publish articles on Tuesdays or Fridays without RDP.
+        To ensure a good spread of publications, the team reserves the right to change the date.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tx_art_content
+    attributes:
+      label: Article Content
+      description: |
+        If you already have your content, paste it here. Maximum length: 65536 characters.
+        Markdown syntax is accepted, but remember that the final rendering is that of Material for Mkdocs and will therefore differ from GitHub's. Here's [the writing guide with key syntax differences](https://contribuer.geotribu.fr/guides/markdown_quality/#interligne-simple).
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+  - type: textarea
+    id: tx_misc_comment
+    attributes:
+      label: Free Message
+      description: "Any comments? A clarification to add? A message for the team?"

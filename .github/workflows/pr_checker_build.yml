@@ -1,0 +1,124 @@
+name: "Pull Request Checker 🛃"
+
+# Inspired from: https://github.com/docker-mailserver/docker-mailserver/blob/master/.github/workflows/docs-preview-prepare.yml
+
+on:
+  pull_request:
+    branches:
+      - main
+
+# Environment variables
+env:
+  BUILD_DIR: build/mkdocs/site
+  LANG: "fr_FR.UTF-8"
+  LC_ALL: "fr_FR.UTF-8"
+  LC_TIME: "fr_FR.UTF-8"
+  NETLIFY_SITE_NAME: geotribu-preprod
+  NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
+  PR_NUMBER: ${{ github.event.pull_request.number }}
+
+# If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
+# eg: Applying multiple suggestions from a review directly via the Github UI.
+# Instances of the 2nd phase of this workflow (via `workflow_run`) presently lack concurrency limits due to added complexity.
+concurrency:
+  group: deploypreview-pullrequest-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: "Check site build 📦"
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'geotribu' }}
+
+    steps:
+      - name: Get source code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+          cache: "pip"
+
+      - name: Install dependencies
+        id: dependencies
+        env:
+          GH_TOKEN_MATERIAL_INSIDERS: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
+        run: |
+          python -m pip install -U pip setuptools wheel
+
+          # if secret (PR created by repo collaborator) exists = paid features, else only free
+          if [[ -z "${GH_TOKEN_MATERIAL_INSIDERS}" ]]; then
+            echo "::warning:: L'accès aux token est réservé aux comptes avec droits d'écriture sur le dépôt. La version gratuite du thème est donc utilisée sans mots-clés, etc.)"
+            python -m pip install -U -r requirements-free.txt
+            echo "MKDOCS_CONFIG_FILENAME=mkdocs-free.yml" >> $GITHUB_ENV
+          else
+            # install insiders version using token
+            python -m pip install -U -r requirements-insiders.txt
+            echo "MKDOCS_CONFIG_FILENAME=mkdocs.yml" >> $GITHUB_ENV
+          fi
+
+      - name: Cache build dependencies (external assets downloaded)
+        uses: actions/cache@v4
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
+      - name: Build in strict mode
+        env:
+          MKDOCS_EDIT_URI: "edit/$GITHUB_HEAD_REF/content"
+          MKDOCS_ENABLE_PLUGIN_RSS: true
+          MKDOCS_ENABLE_PLUGIN_SOCIAL: true
+          MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
+          MKDOCS_SITE_NAME: "Geotribu PREVIEW - PR ${{ github.event.pull_request.number }}"
+          MKDOCS_SITE_COPYRIGHT: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
+        run: |
+          # store custom env vars that need resolution
+          export MKDOCS_EDIT_URI="edit/${GITHUB_HEAD_REF}/content"
+          export MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
+
+          # merge different configs
+          python scripts/050_mkdocs_populate_latest.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
+          python scripts/100_mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
+
+          # build
+          mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --strict
+
+          # save mkdocs.yml for debug
+          cp ${{ env.MKDOCS_CONFIG_FILENAME }} ${{ env.BUILD_DIR }}
+
+          # remove files reserved for production
+          rm ${{ env.BUILD_DIR }}/CNAME
+          rm ${{ env.BUILD_DIR }}/robots.txt
+          rm ${{ env.BUILD_DIR }}/sitemap.xml
+          rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
+
+          # store specific env vars
+          echo "MKDOCS_EDIT_URI=$MKDOCS_EDIT_URI"                   >> pr.env
+          echo "MKDOCS_SITE_COPYRIGHT=$MKDOCS_SITE_COPYRIGHT"       >> pr.env
+          echo "MKDOCS_SITE_NAME=$MKDOCS_SITE_NAME"                 >> pr.env
+          echo "MKDOCS_SITE_URL=$MKDOCS_SITE_URL"                   >> pr.env
+
+        # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
+        # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
+      - name: "Prepare artifact for transfer"
+        run: |
+          # Save ENV for transfer
+          echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"                 >> pr.env
+          echo "GITHUB_HEAD_REF=$GITHUB_HEAD_REF"                     >> pr.env
+          echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
+          echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
+          echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
+          echo "NETLIFY_SITE_NAME=${{ env.NETLIFY_SITE_NAME }}"       >> pr.env
+          echo "NETLIFY_SITE_PREFIX=${{ env.NETLIFY_SITE_PREFIX }}"   >> pr.env
+          echo "BUILD_DIR=${{ env.BUILD_DIR }}"                       >> pr.env
+
+          # archive build dir
+          tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
+
+      - name: Save build website as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-build-website
+          path: artifact.tar.zst
+          retention-days: 1
