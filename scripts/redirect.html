@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- <link rel="canonical" href="https://geotribu.fr/"> -->
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="refresh" content="0; url='https://geotribu.fr/'" /> -->
+    <meta name="robots" content="noindex">
+    <title>Redirection Geotribu</title>
+</head>
+
+<body>
+    <p>Preview website closed. Thanks to visit <a href="https://blog.geotribu.net/">the main website</a>.</p>
+    <!-- Javascript -->
+    <script defer>
+        const url_base = window.location;
+        if (url_base.host.includes("preview-pullrequest-")) {
+            const new_url = "https://blog.geotribu.net" + url_base.pathname;
+            console.log("Redirected to:", new_url);
+            window.location.replace(new_url);
+        }
+        else {
+            let new_url = "https://blog.geotribu.net/";
+            window.location.replace(new_url);
+        }
+    </script>
+</body>
+
+</html>
