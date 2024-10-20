@@ -4,14 +4,10 @@ name: "👀 PR Preview"
 
 on:
   workflow_run:
-    workflows: ["Pull Request Checker 🛃"]
+    workflows:
+      - "Pull Request Checker 🛃"
     types:
       - completed
-
-env:
-  LANG: "fr_FR.UTF-8"
-  LC_ALL: "fr_FR.UTF-8"
-  LC_TIME: "fr_FR.UTF-8"
 
 jobs:
   preview-netlify:
@@ -62,6 +58,7 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_SITE_PREFIX: geotribu-english
         with:
           alias: ${{ env.NETLIFY_SITE_PREFIX }}
           deploy-message: "Deploy preview of PR ${{ env.PR_TITLE }} (PR #${{ env.PR_NUMBER }} @ commit: ${{ env.PR_HEADSHA }})"
