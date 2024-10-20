@@ -184,3 +184,4 @@ nav:
   - Blog:
       - blog/index.md
   - index.md
+  - tags.md
