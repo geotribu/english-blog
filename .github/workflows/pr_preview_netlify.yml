@@ -58,7 +58,7 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_SITE_PREFIX: geotribu-english
+          NETLIFY_SITE_PREFIX: geotribu-english-${{ env.PR_NUMBER }}
         with:
           alias: ${{ env.NETLIFY_SITE_PREFIX }}
           deploy-message: "Deploy preview of PR ${{ env.PR_TITLE }} (PR #${{ env.PR_NUMBER }} @ commit: ${{ env.PR_HEADSHA }})"
