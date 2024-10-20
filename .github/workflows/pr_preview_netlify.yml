@@ -79,8 +79,8 @@ jobs:
           number: ${{ env.PR_NUMBER }}
           recreate: true
           message: |
-            :tada: Le site de prévisualisation pour cette PR a été généré et est [disponible sous ce lien](${{ steps.preview.outputs.deploy-url }}).
-            Commit de référence : ${{ env.PR_HEADSHA }}.
+            :tada: The preview site for this PR has been generated and is [available here](${{ steps.preview.outputs.deploy-url }}).
+            Reference commit : ${{ env.PR_HEADSHA }}.
 
       - name: "Commit Status: update deployment status"
         uses: myrotvorets/set-commit-status-action@v2.0.1
