@@ -29,7 +29,7 @@ subtitle: Bring your GIS conversations to life with QChat in QGIS
 
 We're excited to announce the release of a new feature integrated into our [QTribu](https://plugins.qgis.org/plugins/qtribu/) plugin for QGIS: QChat! This new addition allows you to collaborate in real time with your team or other GIS fellows directly from QGIS.
 
-We're in 2024 (unless you're reading this in 2025, or 2026, or... well, you get the idea), and let's be honest, Teams or IRC are outdated. Plus, you can't even use the hashtag #GISchat there, you can't meet fellow GIS enthusiasts and you definitely can't win Geotribu stickers :wink:... Honestly, it's time for something new.
+We're in 2024 (unless you're reading this in 2025, or 2026, or... well, you get the idea), and let's be honest, Teams or IRC have their cons. Plus, you can't even use the hashtag #GISchat there, you can't meet fellow GIS enthusiasts and you definitely can't win Geotribu stickers :wink:... Honestly, it's time for something new.
 
 Introducing a new way to chat directly in QGIS: `QChat`, a feature that lets you communicate with your peers within the best desktop GIS software around. The question is: why? And the answer: why not?
 
@@ -67,9 +67,9 @@ And then, regarding the QGIS project in particular, there are already communicat
 
 QChat is part of the QTribu plugin, published [on the official repository](https://plugins.qgis.org/plugins/qtribu). QChat is available starting from version 1.0 of the plugin, which can be installed via the QGIS plugin manager:
 
-![QGIS - QTribu plugin installation in the QGIS plugin manager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qtribu_install.webp){: .img-center loading=lazy }
+![QGIS - QTribu plugin installation in the QGIS plugin manager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qtribu_install_en.webp){: .img-center loading=lazy }
 
-### :penguin: additional dependencies required on Linux
+### :penguin: Additional dependencies required on Linux
 
 ![WebSocket logo](https://cdn.geotribu.fr/img/logos-icones/divers/websocket.png){: .img-thumbnail-left }
 
@@ -87,24 +87,24 @@ If these dependencies are not installed, QChat will be disabled in the plugin, a
 
 Once the plugin is installed, you'll need to configure a few settings before chatting. You can find these settings in the plugin options tab, within the general QGIS settings (menu `Preferences` > `Options...`).
 
-![QTribu plugin settings screen](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qtribu_settings_full.webp){: .img-center loading=lazy }
+![QTribu plugin settings screen](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qtribu_settings_full_en.webp){: .img-center loading=lazy }
 
-!!! tip "Awesome plugin settings!"
+!!! tip "Awesome plugin settings !"
     Need more info? You can check out the [QGIS plugin templater](https://oslandia.gitlab.io/qgis/template-qgis-plugin/index.html), which helps you generate a plugin skeleton with a settings tab and more... :wink:
 
 Now, let's take a look at the main settings, starting with the `Attribution info` section at the bottom:
 
-![QChat settings screen for QTribu plugin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_settings_nickname.webp){: .img-center loading=lazy }
+![QChat settings screen for QTribu plugin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_settings_nickname_en.webp){: .img-center loading=lazy }
 
-- `QChat nickname`: this is your nickname, shown to other chat users. It can be between 3 and 32 alphanumeric characters. Time to get creative (note: `xX_D4rth_L4mb3rt_Xx` and `B3rt1n_Le_ouf_du_78` are already taken).
+- `QChat nickname`: this is your nickname, shown to other chat users. It can be between 3 and 32 alphanumeric characters. Time to get creative (note: `xX_D4rth_L4mb3rt_Xx` and `m4d_B3rt1n` are already taken).
 
 - `QChat avatar`: this is the symbolic icon representing you in the chat. You can choose one of the fanciest icons from QGIS, and your avatar will be displayed next to every message you send.
 
 Now, let's move to the `QChat` settings section:
 
-![QChat settings screen for QTribu plugin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_settings.webp){: .img-center loading=lazy }
+![QChat settings screen for QTribu plugin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_settings_en.webp){: .img-center loading=lazy }
 
-- `instance URL`: this specifies which QChat instance you want to connect to. The instance rules can be checked via the `instance rules` button. As of now, two instances are available:
+- `instance URL`: this specifies which QChat instance you want to connect to. The instance rules can be checked via the `Instance rules` button. As of now, two instances are available:
     - `gischat.geotribu.net`: Geotribu's English-language QChat instance, for everyone
     - `gischat.geotribu.fr`: Geotribu's French-language QChat instance, also for everyone
 
@@ -172,4 +172,4 @@ And more features coming soon :wink:
 
 ## Conclusion
 
-QChat is like having a virtual coffee corner, where technical discussions meet geographer jokes (the kind that only insiders find funny). So why not install QChat today and turn your QGIS experience into a collaborative adventure? After all, who said mapping had to be boring? With QChat, every map becomes a shared story, and every project an opportunity to laugh together. Ready to map and chat?
+QChat is like having a virtual coffee corner, where technical discussions meet geographer jokes (the kind that only insiders find funny). So why not install QChat today and turn your QGIS experience into a collaborative adventure ? After all, who said mapping had to be boring ? With QChat, every map becomes a shared story, and every project an opportunity to laugh together. Ready to map and chat ?
