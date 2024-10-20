@@ -80,7 +80,7 @@ jobs:
           hide: true
           hide_classify: "RESOLVED"
 
-      - name: "Félicitations"
+      - name: "Congrats"
         id: pr-comment-good
         uses: marocchino/sticky-pull-request-comment@v2
         if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
@@ -88,4 +88,4 @@ jobs:
           header: linter-md-success
           recreate: true
           message: |
-            :clap: Le markdown ajouté ou modifié est impeccable ! Merci :1st_place_medal:
+            :clap: The markdown added or modified is flawless ! Thanks :1st_place_medal:
