@@ -149,7 +149,7 @@ Note that:
 
 We've seen the client side of QChat in QGIS. To route the messages through WebSockets, there’s also a backend. [The GitHub repository is available here](https://github.com/geotribu/gischat).
 
-The question might be : why is it not based on a chat standard, like `xmpp` or `matrix` ? This is a good question : we developed this backend quickly with Qt's websocket availability in QGIS, in order to make it as simple as possible using some trivial message. Making the plugin compatible with a chat standard is under consideration and will probably represent the next consistent step.
+The question might be: why is it not based on a chat standard, like `xmpp` or `matrix`? This is a good question: following the [KISS](https://en.m.wikipedia.org/wiki/KISS_principle) principle, we developed this backend quickly with Qt's websocket availability in QGIS, in order to make it as simple as possible using some trivial message. Making the plugin compatible with a chat standard is under consideration and will probably represent the next consistent step.
 
 ### Set up your own instance
 
