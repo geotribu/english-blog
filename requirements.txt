@@ -9,4 +9,4 @@ pre-commit>=3.8,<4
 # -----------------------
 
 mkdocs-glightbox>=0.3,<0.5
-mkdocs-rss-plugin>=1.14,<1.16
+mkdocs-rss-plugin>=1.14,<1.17
