@@ -1,13 +1,15 @@
 {
     "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": "active",
     "files.associations": {
-        "./content/theme/overrides/**/*.html": "jinja",
-        ".content/**/.pages": "yaml"
+        ".content/**/.pages": "yaml",
+        "./content/theme/overrides/**/*.html": "jinja-html",
+        "./content/theme/partials/**/*.html": "jinja-html",
+        "./requirements*.txt": "pip-requirements"
     },
     // Git
     "git.allowNoVerifyCommit": true,
@@ -36,7 +38,24 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 4
     },
+    // Python
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.guides.bracketPairs": "active",
+        "editor.rulers": [
+            88
+        ],
+        "editor.wordWrapColumn": 88,
+    },
     // Extensions
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.generateDocstringOnEnter": true,
+    "autoDocstring.guessTypes": true,
     "yaml.customTags": [
         "!ENV scalar",
         "!ENV sequence",
