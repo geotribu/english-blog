@@ -156,7 +156,9 @@ markdown_extensions:
       permalink: "#"
 
 nav:
-  - Blog:
-      - blog/index.md
-  - index.md
-  - tags.md
+  - "Blog": index.md
+  - "&#129299 About": about.md
+  - "&#129330 Want to blog here?": contributing.md
+  - "&#128278; By tags": tags.md
+  - "&#x1F504; RSS feed": /feed_rss_created.xml
+  - "&#127467&#127479; Main website": https://geotribu.fr/
