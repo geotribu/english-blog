@@ -22,11 +22,13 @@ site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 plugins:
   - blog:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_BLOG, true]
+
       archive_name: By dates
       archive_url_date_format: yyyy/MM
       archive_url_format: "{date}"
       authors_file: "{blog}/.authors.yml"
       authors_profiles: true
+      blog_dir: .
       draft_on_serve: true
       draft_if_future_date: true
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
@@ -181,7 +183,9 @@ markdown_extensions:
       permalink: "#"
 
 nav:
-  - Blog:
-      - blog/index.md
-  - index.md
-  - tags.md
+  - "Blog": index.md
+  - "&#129299 About": about.md
+  - "&#129330 Want to blog here?": contributing.md
+  - "&#128278; By tags": tags.md
+  - "&#x1F504; RSS feed": /feed_rss_created.xml
+  - "&#127467&#127479; Main website": https://geotribu.fr/

@@ -1,1 +1,1 @@
-# english-blog
+# Geotribu: English blogs

@@ -6,6 +6,12 @@ authors:
     name: Guilhem Allaman
     slug: guilhem-allaman
     url: https://geotribu.fr/team/guilhem-allaman/
+  geotribu:
+    avatar: https://raw.githubusercontent.com/geotribu/english-blog/refs/heads/main/content/theme/assets/images/geotribu/logo_geotribu.png
+    description: GIS Tribe
+    name: Geotribu
+    slug: geotribu-team
+    url: /about
   jmoura:
     avatar: https://cdn.geotribu.fr/img/internal/contributeurs/jmou.jfif
     description: GIS Watchman
