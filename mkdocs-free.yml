@@ -27,6 +27,7 @@ plugins:
       archive_url_format: "{date}"
       authors_file: "{blog}/.authors.yml"
       # authors_profiles: true
+      blog_dir: .
       draft_on_serve: true
       draft_if_future_date: true
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
