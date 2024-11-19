@@ -75,9 +75,9 @@ repos:
 
 # Specific part for https://pre-commit.ci
 ci:
-  autofix_commit_msg: "[pre-commit.ci] Corrections automatiques appliquées par les git hooks."
+  autofix_commit_msg: "[pre-commit.ci] Automatic fix applied to comply with contributing guidelines, enforced through git hooks."
   autofix_prs: true
-  autoupdate_commit_msg: "[pre-commit.ci] Mise à jour des git hooks."
+  autoupdate_commit_msg: "[pre-commit.ci] Updating git hooks."
   autoupdate_schedule: monthly
   skip: ["check-hooks-apply"]
   # "markdownlint"
