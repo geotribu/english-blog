@@ -74,6 +74,7 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_TAGS: true
           MKDOCS_ENABLE_PLUGIN_TYPESET: true
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
+          MKDOCS_PLUGIN_BLOG_DRAFT_FUTURE_DATE: false
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
