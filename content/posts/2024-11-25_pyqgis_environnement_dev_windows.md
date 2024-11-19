@@ -2,7 +2,7 @@
 authors:
   - nicogodet
 categories:
-  - Posts
+  - Tutorial
 comments: true
 date: 2024-11-25
 description: "For Intellisense happiness"
