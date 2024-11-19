@@ -10,7 +10,7 @@ rss:
   enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, true]
   image: theme/assets/images/geotribu/background_geotribu.png
   length: 50
-  match_path: blog/posts/.*
+  match_path: posts/.*
   pretty_print: false
   url_parameters:
     utm_source: "rss-feed"
