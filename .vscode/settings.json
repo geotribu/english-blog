@@ -56,6 +56,9 @@
     "autoDocstring.docstringFormat": "google",
     "autoDocstring.generateDocstringOnEnter": true,
     "autoDocstring.guessTypes": true,
+    "cSpell.files": [
+        "content/**/*.md"
+    ],
     "cSpell.language": "en",
     "yaml.customTags": [
         "!ENV scalar",
