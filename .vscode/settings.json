@@ -73,6 +73,7 @@
         "https://json.schemastore.org/github-issue-forms.json": ".github/ISSUE_TEMPLATE/ARTICLE.yml"
     },
     "cSpell.words": [
-        "Geotribu"
+        "Geotribu",
+        "Mkdocs"
     ]
 }
