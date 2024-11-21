@@ -30,7 +30,14 @@ Last month [we were announcing with a blog post "QChat"](./2024-10-18_introducin
 
 ![QGIS screen with chat messages in QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_screenshot_en.webp)
 
-Since then, we have been working on some evolutions, and new geo oriented features are now available. Those are provided by the QTribu plugin, that can be downloaded from the official QGIS plugin repository. Latest version is `1.1.0` :
+Since then, we have been working on some evolutions, and new geo oriented features are now available.
+
+<!-- more -->
+
+[Leave a comment :fontawesome-solid-comments:](#__comments "Go to comments"){: .md-button }
+{: align=middle }
+
+Those new features are provided by the QTribu plugin, that can be downloaded from the official QGIS plugin repository. Latest version is `1.1.0` :
 
 ![QGIS - QTribu plugin installation in the QGIS plugin manager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qtribu_install_en_v110.webp){: .img-center loading=lazy }
 
