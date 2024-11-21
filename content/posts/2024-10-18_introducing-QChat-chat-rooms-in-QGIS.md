@@ -67,7 +67,7 @@ And then, regarding the QGIS project in particular, there are already communicat
 
 QChat is part of the QTribu plugin, published [on the official repository](https://plugins.qgis.org/plugins/qtribu). QChat is available starting from version 1.0 of the plugin, which can be installed via the QGIS plugin manager:
 
-![QGIS - QTribu plugin installation in the QGIS plugin manager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qtribu_install_en.webp){: .img-center loading=lazy }
+![QGIS - QTribu plugin installation in the QGIS plugin manager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qtribu_install_en_v100.webp){: .img-center loading=lazy }
 
 ### :penguin: Additional dependencies required on Linux
 
@@ -136,15 +136,12 @@ In the `instance` section at the top, you can view the rules of the configured i
 
 To start chatting, you'll need to connect to a room by selecting one from the dropdown list. Once connected, you're ready to chat! Messages from other users will appear in the middle:
 
-![QGIS screen with chat messages in QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_screenshot_en.webp)
+![QGIS screen with chat messages in QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_messages.webp)
 
 Note that:
 
 - using `@all` in your message will notify all users in the room via the QGIS message bar
 - double-clicking a message in QChat will allow you to mention the user who sent it
-- right-clicking on a vector layer in the layer tree panel will suggest you the `Send on QChat` action : this will share the layer as geojson to the other QChat user. After receiving such a message, clicking on it will add the layer to the current QGIS project
-- it is possible to share some images as well as screenshots of the current QGIS project
-- it is possible to share a CRS as well as an extent. When receiving such messages, the current QGIS project will use the received CRS or fit to the shared extent
 
 ----
 
@@ -169,7 +166,6 @@ Messages are sent over WebSocket, and there are [a few routes available](https:/
 - get instance rules
 - retrieve room names
 - check the number of open WebSockets per room
-- check the registered nicknames in a room
 - send a message to a room via a PUT request
 
 And more features coming soon :wink:
