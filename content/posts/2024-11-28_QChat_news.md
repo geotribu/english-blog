@@ -70,7 +70,7 @@ When receiving such a layer message in the chat, just click on it or use the rig
 
 ![QGIS - Load a vector layer from QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_load_vector_layer.webp){: .img-center loading=lazy }
 
-N.B.: in order to avoid layers thaht would be to big, the server blocks from sharing to the other users the layers that have more than 500 entities.
+N.B.: in order to avoid layers that would be too big, the server blocks from sharing to the other users the layers that have more than 500 features.
 
 ## Send other geo stuff
 
