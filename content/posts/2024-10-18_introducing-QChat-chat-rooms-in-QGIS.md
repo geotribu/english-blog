@@ -12,7 +12,7 @@ license: beerware
 links:
   - QTribu documentation: https://qtribu.geotribu.fr/
   - French announcement: https://geotribu.fr/articles/2024/2024-10-15_qchat/
-pin: true
+pin: false
 tags:
     - GISChat
     - GISTribe
