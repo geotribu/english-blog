@@ -8,6 +8,10 @@ date: 2024-11-25
 description: "For Intellisense happiness"
 icon: material/microsoft-visual-studio-code
 license: beerware
+links:
+    - "Cooking with Gispo: QGIS Plugin Development in VS Code": https://www.gispo.fi/en/blog/qgis-plugin-development-in-vs-code/
+    - IDE settings for writing and debugging plugins (official PyQGIS cookbook): https://docs.qgis.org/3.34/en/docs/pyqgis_developer_cookbook/plugins/ide_debugging.html
+    - French version: https://geotribu.fr/articles/2024/2024-11-25_pyqgis_environnement_dev_windows/
 pin: false
 tags:
     - Plugin QGIS
@@ -15,19 +19,19 @@ tags:
     - Python
     - VS Code
     - Windows
-title: "Creating a Python Virtual Environment for QGIS Plugin Development with VS Code on Windows"
+title: "Creating a Python virtual environment for PyQGIS development with VS Code on Windows."
 subtitle: Keep our env safe, for our PyQGIS children
 ---
 
-# Creating a Python Virtual Environment for QGIS Plugin Development with VS Code on Windows
+# Creating a Python virtual environment for developing QGIS plugin with VS Code on Windows
 
 ## Introduction
 
 ![PyQGIS logo](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-thumbnail-left }
 
-Anyone who has tried it knows that configuring a Python, PyQGIS, and PyQt environment on Windows for developing QGIS plugins is a real challenge. Often, it feels like a losing battle...
+Anyone who has tried it, knows that configuring a Python, PyQGIS, and PyQt environment on Windows for developing QGIS plugins is a real challenge. Often, it feels like a losing battle...
 
-Well, not anymore! After scouring the depths of the internet and exploring tips provided by [Julien](https://geotribu.fr/team/julien-moura/), here is one method to have (almost) all the auto-completions for PyQGIS, PyQt, and more in VS Code.
+Well, not anymore! After scouring the depths of the internet and exploring tips provided by [Julien](https://geotribu.fr/team/julien-moura/), here is one method to have (almost) all the auto-completions for PyQGIS, PyQt and more in VS Code.
 
 <!-- more -->
 
@@ -52,12 +56,12 @@ I will assume that you have installed QGIS in the `C:\OSGeo4W` directory (the pr
 
     The `--system-site-packages` option allows the virtual environment to inherit libraries specific to the Python environment in QGIS.
 
-1. To ensure VSCode recognizes `processing` imports, add the following line to the `.venv\qgis.pth` file:  
+1. To ensure VS Code recognizes `processing` imports, add the following line to the `.venv\qgis.pth` file:  
     `C:\OSGeo4W\apps\qgis\python\plugins`
 
     Your file should look like this:
 
-    ```text title="Contents of .venv\qgis.pth file"
+    ```text title="Content of .venv\qgis.pth file"
     C:\OSGeo4W\apps\qgis\python
     C:\OSGeo4W\apps\qgis\python\plugins
     ```
