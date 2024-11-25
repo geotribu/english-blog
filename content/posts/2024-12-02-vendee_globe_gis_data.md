@@ -1,17 +1,13 @@
 ---
-title: Follow the Vendée Globe 2024 from a GIS
-subtitle: Vendée Globe and GIS data
 authors:
-   - Florent FOUGERES
+  - ffougeres
 categories:
-   - article
+  - Announcements
 comments: true
-date: 2024-11-20
+date: 2024-12-02
 description: Create and visualize GIS data on the progress of the Vendée Globe 2024 race from official spreadsheets.
 icon: material/sail-boat
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/trajectoire.png
 license: beerware
-robots: index, follow
 tags:
    - GeoPandas
    - Pandas
@@ -19,6 +15,8 @@ tags:
    - QGIS
    - Vendée Globe
    - Sailing
+title: Follow the Vendée Globe 2024 from a GIS
+subtitle: Vendée Globe and GIS data
 ---
 
 # Follow the Vendée Globe 2024 from a GIS
