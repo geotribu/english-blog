@@ -2,7 +2,7 @@
 title: Follow the Vendée Globe 2024 from a GIS
 subtitle: Vendée Globe and GIS data
 authors:
-   - Florent FOUGÈRES
+   - Florent FOUGERES
 categories:
    - article
 comments: true
