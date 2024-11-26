@@ -167,7 +167,7 @@ The result obtained is a layer of points of the latest pointing date. For exampl
 
 Once displayed in QGIS and with a little work on the style, here is the result:
 
-![Screenshot QGIS - Layer of positions of the last pointing](<https://cdn.geotribu.fr/img/articles-blog-rdp/> articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
+![Screenshot QGIS - Layer of positions of the last pointing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
 
 ### Get all the scores and the track from the start
 
@@ -182,7 +182,7 @@ We obtain a geopackage which contains two layers:
 - A layer of the history of all the pointings since the start.
 - A line layer that reproduces the trajectory of each boat.
 
-![Screenshot QGIS - Layers of the trajectories since the start and all the points](<https://cdn.geotribu.fr/img/articles-blog-rdp/articles/> 2024/vendee_globe_donnees_sig/trajectoire.png){: .img-center loading=lazy }
+![Screenshot QGIS - Layers of the trajectories since the start and all the points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/trajectoire.png){: .img-center loading=lazy }
 
 ### Attribute data
 
