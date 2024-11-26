@@ -1,13 +1,12 @@
 articles:
   - changed-files:
       - any-glob-to-any-file:
-          - content/articles/**/*.md
+          - content/posts/**/*.md
 
-contenus communs:
+common:
   - changed-files:
       - any-glob-to-any-file:
           - content/*.md
-          - content/newsletter/*.md
           - content/toc_nav_ignored/**
   - head-branch:
       - common
@@ -15,8 +14,7 @@ contenus communs:
 contributors:
   - changed-files:
       - any-glob-to-any-file:
-          - content/team/**/*.md
-          - content/**/.authors.yml
+          - content/.authors.yml
 
 dependencies:
   - changed-files:
