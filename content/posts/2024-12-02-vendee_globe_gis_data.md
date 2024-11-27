@@ -21,7 +21,6 @@ subtitle: Vendée Globe and GIS data
 
 # Follow the Vendée Globe 2024 from a GIS
 
-:calendar: Initial publication date: {{ page.meta.date | date_localized }}
 
 ## What is the Vendée Globe?
 
