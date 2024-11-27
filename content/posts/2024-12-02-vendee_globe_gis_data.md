@@ -14,7 +14,7 @@ tags:
    - Python
    - QGIS
    - Vendée Globe
-   - Sailing
+   - sailing
 title: Follow the Vendée Globe 2024 from a GIS
 subtitle: Vendée Globe and GIS data
 ---
