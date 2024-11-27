@@ -3,7 +3,7 @@ authors:
   - gallaman
   - jmoura
 categories:
-  - Announcements
+  - Article
 comments: true
 date: 2024-10-18
 description: "In 2024, it's time to leave Teams and IRC behind to enter a new era where you can chat directly from QGIS with other GIS fellows. #GISChat #GISTribe"
