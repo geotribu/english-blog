@@ -2,7 +2,7 @@
 authors:
   - ffougeres
 categories:
-  - Announcements
+  - Article
 comments: true
 date: 2024-12-02
 description: Create and visualize GIS data on the progress of the Vendée Globe 2024 race from official spreadsheets.
