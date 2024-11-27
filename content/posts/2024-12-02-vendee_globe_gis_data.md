@@ -247,8 +247,3 @@ This first step is only a POC (Proof of Concept) the code can still be optimized
 
 - **Create a cartographic web application** to visualize the progress of the boats with more possibilities than what the official cartographic interface offers. I had imagined using [mviewer](https://mviewer.github.io/fr/) for this.
 
-----
-
-<!-- geotribu:authors-block -->
-
-{% include "licenses/beerware.md" %}
