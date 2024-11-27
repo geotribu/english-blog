@@ -21,7 +21,6 @@ subtitle: Vendée Globe and GIS data
 
 # Follow the Vendée Globe 2024 from a GIS
 
-
 ## What is the Vendée Globe?
 
 ![logo Vendée Globe](https://cdn.geotribu.fr/img/logos-icones/divers/vendee_globe.png){: .img-thumbnail-left }
@@ -246,4 +245,3 @@ This first step is only a POC (Proof of Concept) the code can still be optimized
 - **Provide data via an API**: We could imagine a project that automatically retrieves this data, converts and structures it, then exposes an API that provides a position or trajectory based on a competitor's number, for example.
 
 - **Create a cartographic web application** to visualize the progress of the boats with more possibilities than what the official cartographic interface offers. I had imagined using [mviewer](https://mviewer.github.io/fr/) for this.
-
