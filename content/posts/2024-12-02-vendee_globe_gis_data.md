@@ -81,7 +81,7 @@ Finally, it is important to export this GIS data in a compatible format, such as
 
 ## Industrialize the method
 
-! [factory logo](https://cdn.geotribu.fr/img/logos-icones/divers/factory.png){: .img-thumbnail-left }
+![factory logo](https://cdn.geotribu.fr/img/logos-icones/divers/factory.png){: .img-thumbnail-left }
 
 To automate the process described above, I created a [GitHub project](https://github.com/florentfgrs/Vendee-Globe-2024) that automates these tasks with Python scripts. It works in command lines, and there are currently two of them (see below).
 
