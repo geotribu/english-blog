@@ -10,7 +10,7 @@ icon: material/chat
 license: beerware
 links:
   - QTribu documentation: https://qtribu.geotribu.fr/
-  - Initial introduction: ./2024-10-18_introducing-QChat-chat-rooms-in-QGIS.md
+  - Initial introduction: posts/2024-10-18_introducing-QChat-chat-rooms-in-QGIS.md
 pin: false
 tags:
     - GISChat
