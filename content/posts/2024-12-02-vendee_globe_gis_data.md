@@ -34,6 +34,8 @@ It is a solo sailing race, non-stop and without assistance, around the world. It
 
 ![map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/carte_vendee_globe.svg){: .img-center loading=lazy }
 
+<!-- more -->
+
 ----
 
 ## Follow the progress
@@ -57,8 +59,6 @@ This file communicates the positions every day at 2am, 6am, 10am, 2pm, 6pm and 1
 This table contains the rank, the name of the boat and the skipper, but also the speed and course over the last 30 minutes, the last 24 hours and since the last score.
 
 From this spreadsheet, the goal will therefore be to build geographic data for the race, whether to trace the trajectory, but also to aggregate all the scores.
-
-<!-- more -->
 
 [Comment on this article :fontawesome-solid-comments:](#__comments "Go to comments"){: .md-button }
 {: align=middle }
