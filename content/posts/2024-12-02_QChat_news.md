@@ -4,13 +4,13 @@ authors:
 categories:
   - Article
 comments: true
-date: 2024-11-28
+date: 2024-12-02
 description: "Some news about QChat and the features provided by the new 1.1 version. #GISChat #GISTribe"
 icon: material/chat
 license: beerware
 links:
   - QTribu documentation: https://qtribu.geotribu.fr/
-  - Initial announcement: https://blog.geotribu.net/2024/10/18/introducing-qchat-a-chat-within-qgis/
+  - Initial introduction: content/posts/2024-10-18_introducing-QChat-chat-rooms-in-QGIS.md
 pin: false
 tags:
     - GISChat
@@ -26,7 +26,7 @@ subtitle:
 
 ![icône globe speech GIS Chat - Credits: Global Market by DARAYANI from Noun Project (CC BY 3.0)](https://cdn.geotribu.fr/img/logos-icones/divers/globe_speech_GISChat.svg){: .img-thumbnail-left }
 
-Last month [we introduced "QChat"](./2024-10-18_introducing-QChat-chat-rooms-in-QGIS.md), the plugin for chatting with other QGIS users, directly inside QGIS.
+In October [we introduced "QChat"](./2024-10-18_introducing-QChat-chat-rooms-in-QGIS.md), the plugin for chatting with other QGIS users, directly inside QGIS.
 
 ![QGIS screen with chat messages in QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_screenshot_en.webp)
 
