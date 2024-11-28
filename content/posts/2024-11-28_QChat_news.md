@@ -2,7 +2,7 @@
 authors:
   - gallaman
 categories:
-  - Announcements
+  - Article
 comments: true
 date: 2024-11-28
 description: "Some news about QChat and the features provided by the new 1.1 version. #GISChat #GISTribe"
