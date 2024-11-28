@@ -26,7 +26,7 @@ subtitle:
 
 ![icône globe speech GIS Chat - Credits: Global Market by DARAYANI from Noun Project (CC BY 3.0)](https://cdn.geotribu.fr/img/logos-icones/divers/globe_speech_GISChat.svg){: .img-thumbnail-left }
 
-Last month [we were announcing with a blog post "QChat"](./2024-10-18_introducing-QChat-chat-rooms-in-QGIS.md), the plugin for chatting with the other users, directly inside QGIS.
+Last month [we introduced "QChat"](./2024-10-18_introducing-QChat-chat-rooms-in-QGIS.md), the plugin for chatting with other QGIS users, directly inside QGIS.
 
 ![QGIS screen with chat messages in QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/qchat_screenshot_en.webp)
 
