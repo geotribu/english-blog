@@ -8,6 +8,9 @@ date: 2024-12-02
 description: Create and visualize GIS data on the progress of the Vendée Globe 2024 race from official spreadsheets.
 icon: material/sail-boat
 license: beerware
+links:
+ - French version: https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/
+ - Official race website: https://www.vendeeglobe.org/en
 tags:
    - GeoPandas
    - Pandas
@@ -15,7 +18,7 @@ tags:
    - QGIS
    - Vendée Globe
    - sailing
-title: Follow the Vendée Globe 2024 from a GIS
+title: Track the Vendée Globe race with Python and QGIS
 subtitle: Sailing GIS
 ---
 
@@ -100,7 +103,7 @@ The headers of the Excel file are often made up of merged cells, which makes the
 This step involves removing line breaks, special characters, or any other anomalies that could disrupt data processing.
 
     ```pandas title="DataFrame before cleaning"
-   rang             code                                                nom         heure  ...   24h_vmg 24h_distance         dtf       dtl
+        rang             code                                                nom         heure  ...   24h_vmg 24h_distance         dtf       dtl
     0     1   GBR\r\nFRA 100                        Sam Goodchild\r\nVULNERABLE  10:30 FR\r\n  ...  10.5 kts     255.1 nm  22300.7 nm    0.0 nm
     1     2   FRA\r\nFRA 112                 Sébastien Simon\r\nGroupe Dubreuil  10:30 FR\r\n  ...   7.4 kts     223.1 nm  22324.7 nm   24.0 nm
     2     3    FRA\r\nFRA 59                        Thomas Ruyant\r\nVULNERABLE  10:30 FR\r\n  ...  10.7 kts     288.1 nm  22352.7 nm   52.0 nm
@@ -110,7 +113,7 @@ This step involves removing line breaks, special characters, or any other anomal
     ```
 
     ```pandas title="DataFrame after cleaning"
-   rang            code                                                nom        heure  ...   24h_vmg 24h_distance         dtf       dtl
+    rang            code                                                nom        heure  ...   24h_vmg 24h_distance         dtf       dtl
     0     1   GBR - FRA 100                         Sam Goodchild - VULNERABLE  10:30 FR -   ...  10.5 kts     255.1 nm  22300.7 nm    0.0 nm
     1     2   FRA - FRA 112                  Sébastien Simon - Groupe Dubreuil  10:30 FR -   ...   7.4 kts     223.1 nm  22324.7 nm   24.0 nm
     2     3    FRA - FRA 59                         Thomas Ruyant - VULNERABLE  10:30 FR -   ...  10.7 kts     288.1 nm  22352.7 nm   52.0 nm
