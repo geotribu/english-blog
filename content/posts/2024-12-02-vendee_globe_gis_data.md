@@ -16,7 +16,7 @@ tags:
    - Vendée Globe
    - sailing
 title: Follow the Vendée Globe 2024 from a GIS
-subtitle: Vendée Globe and GIS data
+subtitle: Sailing GIS
 ---
 
 # Follow the Vendée Globe 2024 from a GIS
