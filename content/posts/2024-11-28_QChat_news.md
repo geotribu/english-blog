@@ -11,7 +11,7 @@ license: beerware
 links:
   - QTribu documentation: https://qtribu.geotribu.fr/
   - Initial announcement: https://blog.geotribu.net/2024/10/18/introducing-qchat-a-chat-within-qgis/
-pin: true
+pin: false
 tags:
     - GISChat
     - GISTribe
