@@ -18,6 +18,10 @@ edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/main/content"]
 docs_dir: !ENV [MKDOCS_SOURCE_DIR, "./content"]
 site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
+# Mkdocs hooks
+hooks:
+  - hooks/mkdocs/G007_social_share_buttons.py
+
 # Plugins
 plugins:
   - blog:

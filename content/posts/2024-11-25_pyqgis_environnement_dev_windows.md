@@ -19,7 +19,7 @@ tags:
     - Python
     - VS Code
     - Windows
-title: "Creating a Python virtual environment for PyQGIS development with VS Code on Windows."
+title: "Creating a Python virtual environment for PyQGIS development with VS Code on Windows"
 subtitle: Keep our env safe, for our PyQGIS children
 ---
 
