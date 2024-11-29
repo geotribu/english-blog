@@ -4,7 +4,7 @@ authors:
 categories:
   - Article
 comments: true
-date: 2024-12-02
+date: 2024-12-03
 description: "Some news about QChat and the features provided by the new 1.1 version. #GISChat #GISTribe"
 icon: material/chat
 license: beerware
