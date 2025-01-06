@@ -1,3 +1,4 @@
 redirects:
   redirect_maps:
+    blog.md: index.md
     blog/2024/10/18/introducing-qchat-a-chat-within-qgis.md: posts/2024-10-18_introducing-QChat-chat-rooms-in-QGIS.md
