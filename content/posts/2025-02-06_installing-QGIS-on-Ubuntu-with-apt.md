@@ -83,13 +83,15 @@ sudo apt install ca-certificates gnupg lsb-release software-properties-common
 
 ----
 
-## Adding the official QGIS repository
+## Adding the official QGIS repository (PPA)
 
-The QGIS project maintains an official repository for Debian-based distributions, including Ubuntu. To use it, we need to authenticate and configure it properly.
+The QGIS project maintains an official packages repository (PPA) for Debian-based distributions, including Ubuntu. To use it, we need to authenticate and configure it properly.
 
 ### Authentication key
 
-We start by downloading the repository's authentication key and storing it in the appropriate system directory:
+To install anything from this repository, you need to be able to authenticate it to the system.
+
+We start by downloading the PPA's authentication key and storing it in the appropriate system directory:
 
 ```sh
 sudo mkdir -p /etc/apt/keyrings
