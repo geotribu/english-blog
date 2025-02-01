@@ -43,9 +43,6 @@ plugins:
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
         color: "#56c29e"
         font_family: Ubuntu
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_file: tags.md
 
 # Theme
 theme:

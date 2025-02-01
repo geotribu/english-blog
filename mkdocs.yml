@@ -70,10 +70,6 @@ plugins:
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
         color: "#56c29e"
         font_family: Ubuntu
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
-      listings_sort_by: !!python/name:material.plugins.tags.item_url
   - typeset:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TYPESET, true]
 
