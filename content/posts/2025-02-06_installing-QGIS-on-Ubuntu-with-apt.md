@@ -150,9 +150,9 @@ sudo apt install qgis
 
 ## Cleaning up
 
-If things go wrong—perhaps due to a botched upgrade or conflicting repositories—you may need to clean up your system before retrying.
+If things go wrong, perhaps due to a botched upgrade or conflicting repositories, you may need to clean up your system before retrying.
 
-![Drastic cleanup](https://media.tenor.com/fQmZ_N0b57kAAAAC/kaamelott-leodagan.gif){: .img-center loading=lazy }
+![Drastic cleanup](https://media.tenor.com/QdYwnFzWm4oAAAAd/flaming-sword-boom.gif){: .img-center loading=lazy }
 
 Remove QGIS:
 
