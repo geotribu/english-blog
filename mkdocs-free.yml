@@ -128,7 +128,8 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
       use_pygments: true
-  - pymdownx.inlinehilite
+  - pymdownx.
+  - pymdownx.keys
   - pymdownx.smartsymbols
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
