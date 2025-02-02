@@ -62,7 +62,7 @@ No, non-LTR versions aren’t stable enough, especially before they reach at lea
 Sure, I don’t get the latest flashy features making the rounds on GIS news sites. My versions of GDAL and PROJ might be older than my kid, but my setup just works(tm).
 And I can focus on my work without worrying about the next update breaking something. :person_in_lotus_position:
 
-![People installing non-LTR QGIS](https://media.giphy.com/media/nneVpy2YnHZNm/giphy.gif "People installing non-LTR QGIS"){: .img-center loading=lazy }
+![People installing non-LTR QGIS](https://media.giphy.com/media/nneVpy2YnHZNm/giphy.gif){: .img-center loading=lazy }
 
 > :person_juggling: Those who install non-LTR QGIS without patch releases :person_juggling:
 {: align=middle }
@@ -136,15 +136,25 @@ sudo apt update
 
 To see available QGIS-related packages, start typing `sudo apt install qgis` and press ++tab++ for autocomplete suggestions.
 
+```sh title="List QGIS related packages eligible to installation"
+$ sudo apt install qgis
+qgis                      qgis-plugin-grass-common  qgis-server-common        qgis-server-wms
+qgis3-survex-import       qgis-provider-grass       qgis-server-dummy         qgis-server-wmts
+qgis-api-doc              qgis-providers            qgis-server-landingpage   qgis-sip
+qgis-common               qgis-providers-common     qgis-server-wcs  
+qgis-dbg                  qgis-server               qgis-server-wfs  
+qgis-plugin-grass         qgis-server-bin           qgis-server-wfs3
+```
+
+![Available packages starting par 'qgis'](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/ubuntu_apt_install_qgis_autocompletion.webp){: .img-center loading=lazy }
+
+Unless you have special needs, it's always best to install only the minimum required. In my case, that's `qgis`... and that's more than enough, as it's already collecting a whole bunch of packages:
+
 ```sh
 sudo apt install qgis
 ```
 
-For most users, installing `qgis` is sufficient:
-
-```sh
-sudo apt install qgis
-```
+![Downloaded and installed dependencies for a classic QGIS installation on Ubuntu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/ubuntu_apt_install_qgis_dependances.webp){: .img-center loading=lazy }
 
 ----
 
