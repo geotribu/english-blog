@@ -14,6 +14,13 @@ authors:
     slug: geotribu-team
     url: /about
     email: geotribu+en@gmail.com
+  iivanov:
+    avatar: https://avatars.githubusercontent.com/u/2820439?v=4
+    description: Bulgaria's BG
+    name: Ivan Ivanov
+    slug: ivan-ivanov
+    url: /about
+    email: ivan.ivanov@suricactus.com
   jmoura:
     avatar: https://cdn.geotribu.fr/img/internal/contributeurs/jmou.jfif
     description: GIS Watchman
