@@ -4,7 +4,7 @@ subtitle: apt install qgis-zen-mode
 authors:
     - jmoura
 categories:
-    - Article
+    - Tutorial
 comments: true
 date: 2025-02-11
 description: Installing the most widely used open-source GIS software on the most popular Linux distribution should be straightforward, yet it often raises questions and even problems. This guide walks you through the process so you can refer back to it whenever needed.
