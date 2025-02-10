@@ -3,7 +3,6 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
-    "editor.formatOnSave": true,
     "editor.guides.bracketPairs": "active",
     "files.associations": {
         ".content/**/.pages": "yaml",
@@ -34,9 +33,10 @@
     "markdown.validate.fileLinks.markdownFragmentLinks": "warning",
     "markdown.validate.fragmentLinks.enabled": "warning",
     "[markdown]": {
-        "files.trimTrailingWhitespace": false,
+        "editor.formatOnSave": true,
         "editor.insertSpaces": true,
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "files.trimTrailingWhitespace": false,
     },
     // Python
     "python.defaultInterpreterPath": ".venv/bin/python",
