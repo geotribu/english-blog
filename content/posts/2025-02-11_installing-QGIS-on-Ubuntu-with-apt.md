@@ -6,7 +6,7 @@ authors:
 categories:
     - Article
 comments: true
-date: 2025-02-10
+date: 2025-02-11
 description: Installing the most widely used open-source GIS software on the most popular Linux distribution should be straightforward, yet it often raises questions and even problems. This guide walks you through the process so you can refer back to it whenever needed.
 icon: fontawesome/brands/ubuntu
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png
