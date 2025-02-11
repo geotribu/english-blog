@@ -9,7 +9,6 @@ comments: true
 date: 2025-02-11
 description: Installing the most widely used open-source GIS software on the most popular Linux distribution should be straightforward, yet it often raises questions and even problems. This guide walks you through the process so you can refer back to it whenever needed.
 icon: fontawesome/brands/ubuntu
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png
 license: beerware
 links:
   - Original version (French): https://geotribu.fr/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/
@@ -273,12 +272,6 @@ sudo apt update
 ```
 
 Now, you're ready to restart the installation process from the beginning.
-
-----
-
-## Credits
-
-- The header image is sourced from [Instrutor GIS](https://www.instrutorgis.com.br/)
 
 <!-- specific abbreviations -->
 *[PPA]: PPAs, for Personal Package Archive, are package repositories characteristic of Debian-based distributions and allow you to install software not available in the official repositories of a distribution (Ubuntu in our case).
