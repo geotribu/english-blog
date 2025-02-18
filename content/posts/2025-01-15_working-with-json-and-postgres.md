@@ -136,7 +136,7 @@ For the adventurous, there's a PostgreSQL extension called `btree_gin` that allo
 
 ## Table creation
 
-I'm not going to spam you with Data Definition Language (https://en.wikipedia.org/wiki/Data_definition_language), but you can find the complete database schema [here](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables).
+I'm not going to spam you with Data Definition Language (<https://en.wikipedia.org/wiki/Data_definition_language>), but you can find the complete database schema [here](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables).
 
 However, here's a brief diagram to help you understand the rest of the article:
 
@@ -178,7 +178,7 @@ CREATE INDEX idx_donnees_com_donnees ON insee.donnees_communes USING gin (donnee
 END;
 ```
 
-The most fussy of you DBAs will have noticed this `CHECK`. “Why doesn't he use varchar(5)? It really doesn't make sense!” Quite simply, because this form allows you to use a text type with **really** arbitrary numbers of characters (the `text` type) unlike varchar(255), while being able to control the minimum and maximum number with the `CHECK` predicate (unlike varchar which only controls the maximum) as explained on the [Postgres wiki].(https://wiki.postgresql.org/wiki/Don%27t_Do_This#Don.27t_use_varchar.28n.29_by_default).
+The most fussy of you DBAs will have noticed this `CHECK`. “Why doesn't he use varchar(5)? It really doesn't make sense!” Quite simply, because this form allows you to use a text type with **really** arbitrary numbers of characters (the `text` type) unlike varchar(255), while being able to control the minimum and maximum number with the `CHECK` predicate (unlike varchar which only controls the maximum) as explained on the [Postgres wiki].(<https://wiki.postgresql.org/wiki/Don%27t_Do_This#Don.27t_use_varchar.28n.29_by_default>).
 
 And we insert a few rows in our insee.bases table :
 
@@ -293,7 +293,7 @@ Before inserting the data into our table, we'll go through a temporary table to 
 
 Now, get ready for perhaps one of the weirdest INSERTs of your life (at least, it was for me!). Ugh. I realize that if I wanted to do this right, I'd also have to explain [CTE](https://www.postgresql.org/docs/current/queries-with.html). But I'll let you click on the link so as not to make it too long.
 
-We're going to use the CTE to concatenate the name we want to give to our keys with the values contained in our temporary table in a string separated by `,`. We'll send it to a `string_to_array()` function and then to a `jsonb_object()` function. We'll also take the opportunity to clean up any tabs or carriage returns that might remain with a regular expression, using the `regex_replace()` function. (These characters are called ``t`, ``n` and ``r`). The latter function takes 3 arguments: the source string, the searched-for `pattern` and the replacement text. The optional `g` flag* is added to replace all occurrences found.
+We're going to use the CTE to concatenate the name we want to give to our keys with the values contained in our temporary table in a string separated by `,`. We'll send it to a `string_to_array()` function and then to a `jsonb_object()` function. We'll also take the opportunity to clean up any tabs or carriage returns that might remain with a regular expression, using the `regex_replace()` function. (These characters are called ``t`,``n`and ``r`). The latter function takes 3 arguments: the source string, the searched-for `pattern` and the replacement text. The optional `g` flag* is added to replace all occurrences found.
 
 Note that if your temporary table has a name other than “rp_population_import”, you'll need to modify the FROM clause in the CTE.
 
@@ -429,7 +429,6 @@ Be sure to group the inserts in this order: year/base/commune_code, to make it e
 
 Now, imagine that, like the author of these lines, your fat, pudgy fingers stumble and slip on your keyboard while writing this query, that a typo slips in, and then it's drama. How do you change the name of a key already encoded in the table? Here's how:
 
-
 ```sql
 CREATE TABLE example(id int PRIMARY KEY, champ jsonb);
 INSERT INTO example VALUES
@@ -522,7 +521,7 @@ SELECT * FROM final WHERE valeur IS NOT NULL;
 
 Please note that creating or refreshing this materialized view may take some time if you've stored a lot of data (1 hour in my case for the 6 sections from 2015 to 2021).
 
-Finally, in the spirit of living with the times and not like an old cave bear, we're going to convert this materialized view into a [parquet] file (https://parquet.apache.org/).
+Finally, in the spirit of living with the times and not like an old cave bear, we're going to convert this materialized view into a [parquet] file (<https://parquet.apache.org/>).
 And for that, we're going to use GDAL, which is truly incredible.
 
 ```sh title="View export in parquet format"
