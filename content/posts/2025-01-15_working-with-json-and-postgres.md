@@ -39,13 +39,13 @@ This article is not intended to be an invitation to go into YOLO mode on data ma
 For those of you unfamiliar with [JSON](https://www.json.org/json-fr.html) it's a text-based data representation format from JavaScript that works in part on a `key:value` system that can be seen as a sort of evolution of XML.
 
 ```json
-{ “key_1”: “value”, “key_2”: “value”, “key_3”: “value”}
+{“key_1”: “value”, “key_2”: “value”, “key_3”: “value”}
 ```
 
 No need for quotation marks for numbers:
 
 ```json
-{ “nb_mushrooms”: 42, “nb_tomatoes”: 31, “first_name”: “roger”}
+{“nb_mushrooms”: 42, “nb_tomatoes”: 31, “first_name”: “roger”}
 ```
 
 Values can take two forms:
@@ -54,7 +54,6 @@ Values can take two forms:
 - or an array, a list, enclosed in `[]`, both of which can be combined in a single JSON object.
 
 ```json
-json
 {“prenoms”: [“first_name”, “roger”, “fatima”], “nb_mushrooms”: 42}
 ```
 
@@ -521,7 +520,7 @@ SELECT * FROM final WHERE valeur IS NOT NULL;
 
 Please note that creating or refreshing this materialized view may take some time if you've stored a lot of data (1 hour in my case for the 6 sections from 2015 to 2021).
 
-Finally, in the spirit of living with the times and not like an old cave bear, we're going to convert this materialized view into a [parquet] file (<https://parquet.apache.org/>).
+Finally, in the spirit of living with the times and not like an old cave bear, we're going to convert this materialized view into a [parquet file](<https://parquet.apache.org/>).
 And for that, we're going to use GDAL, which is truly incredible.
 
 ```sh title="View export in parquet format"
