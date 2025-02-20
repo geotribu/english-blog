@@ -1,10 +1,6 @@
 # No Material Insiders
 # --------------------
 
-<<<<<<< Updated upstream
-mkdocs-material[imaging]>=9.6.4,<9.7
-=======
 mkdocs-material[imaging]>=9.6.5,<9.7
->>>>>>> Stashed changes
 
 -r requirements.txt
