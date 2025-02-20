@@ -2,11 +2,11 @@
 title: Working with JSON and PostgreSQL
 subtitle: Jason and the elephants
 authors:
-    - Thomas SZCZUREK-GAYANT
+    - tszczurek
 categories:
     - article
 comments: true
-date: 2025-01-21
+date: 2025-02-27
 description: "Store data in json format in PostgreSQL, consult it... and all this using INSEE french census data as an example. "
 icon: simple/postgresql
 image:
@@ -35,7 +35,7 @@ Since we're going to be talking about JSON and semi-structured data, I feel obli
 This article is not intended to be an invitation to go into YOLO mode on data management: “all you have to do is put everything in JSON” (like a vulgar dev who would put everything in MongoDB, as the bad tongues would say).
 
 <!-- more -->
-## JSON for beginners⸱es
+## JSON for beginners
 
 For those of you unfamiliar with [JSON](https://www.json.org/json-fr.html) it's a text-based data representation format from JavaScript that works in part on a `key:value` system that can be seen as a sort of evolution of XML.
 
@@ -60,7 +60,7 @@ Values can take two forms:
 
 What we call an object is everything between the `{}` used to declare it. To make things even more complex, we can nest objects and give you an example that's a little more meaningful than talking about tomatoes and mushrooms:
 
-```json title="Exemple de JSON des superhéros" linenums="1"
+```json title="Example with JSON of superheroes" linenums="1"
 {
   "squadName": "Super hero squad",
   "homeTown": "Metro City",
@@ -264,7 +264,7 @@ INSERT INTO test.test (donnees) VALUES
 ('{"key1": "value1", "key2": ["foo", "bar", "baz"]}'::jsonb)
 ```
 
-#### Recupération
+#### Data recovery
 
 To retrieve a value, we use the `jsonb_path_query()` function, which has two parameters: `the name of the field` containing the json data, and the `json_path` to the value to be retrieved. Let's imagine we want to retrieve the second value in the list contained in “key2” :
 
