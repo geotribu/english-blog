@@ -11,6 +11,8 @@ description: "Store data in json format in PostgreSQL, consult it... and all thi
 icon: simple/postgresql
 image:
 license: default
+links:
+  - Original version (French): https://geotribu.fr/articles/2025/2025-01-21_travailler-avec-JSON-et-PostgreSQL/ 
 robots: index, follow
 tags:
     - PostgreSQL
@@ -18,8 +20,6 @@ tags:
 ---
 
 # Working with JSON in PostgreSQL
-
-:calendar: Initial publication date : {{ page.meta.date | date_localized }}
 
 ![logo JSON](https://cdn.geotribu.fr/img/logos-icones/programmation/json.png){: .img-thumbnail-left }
 
@@ -34,6 +34,7 @@ Since we're going to be talking about JSON and semi-structured data, I feel obli
 
 This article is not intended to be an invitation to go into YOLO mode on data management: “all you have to do is put everything in JSON” (like a vulgar dev who would put everything in MongoDB, as the bad tongues would say).
 
+<!-- more -->
 ## JSON for beginners⸱es
 
 For those of you unfamiliar with [JSON](https://www.json.org/json-fr.html) it's a text-based data representation format from JavaScript that works in part on a `key:value` system that can be seen as a sort of evolution of XML.
@@ -420,7 +421,7 @@ FROM d
 ORDER BY "CODGEO";
 ```
 
-Ouf.
+_Ouf._
 
 ![Overview of the donnees_communes table after data insertion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/donnees_communes.png){: .img-center loading=lazy }
 
