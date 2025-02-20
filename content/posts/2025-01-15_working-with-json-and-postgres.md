@@ -12,7 +12,7 @@ icon: simple/postgresql
 image:
 license: default
 links:
-  - Original version (French): https://geotribu.fr/articles/2025/2025-01-21_travailler-avec-JSON-et-PostgreSQL/ 
+  - Original version (French): https://geotribu.fr/articles/2025/2025-01-21_travailler-avec-JSON-et-PostgreSQL/
 robots: index, follow
 tags:
     - PostgreSQL
@@ -421,7 +421,7 @@ FROM d
 ORDER BY "CODGEO";
 ```
 
-_Ouf._
+*Ouf.*
 
 ![Overview of the donnees_communes table after data insertion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/donnees_communes.png){: .img-center loading=lazy }
 
