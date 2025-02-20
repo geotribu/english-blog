@@ -25,7 +25,7 @@ tags:
 
 As part of a personal project, I wanted to store a large part of the INSEE's french census data in a PostgreSQL database with multi-millennial tables. The problem is that, within the same dataset, the fields can change over the years, which makes it impossible to create a fixed table structure. The solution? Use semi-structured data, i.e. store this data in JSON in a table field. This article is a summary of that experience.
 
-!!! “Unscheduled obsolescence” info
+!!! info "Unscheduled obsolescence"
     This work was carried out before the release of PostgreSQL 17, which adds important features for JSON with [`JSON_TABLE`](https://doc.postgresql.fr/17/functions-json.html#FUNCTIONS-SQLJSON-TABLE), so it won't be mentioned here.
 
 Since we're going to be talking about JSON and semi-structured data, I feel obliged to start this article with a warning.
