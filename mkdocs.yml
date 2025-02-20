@@ -27,12 +27,17 @@ hooks:
 plugins:
   - blog:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_BLOG, true]
+      archive_date_format: yyyy
       archive_name: By dates
-      archive_url_date_format: yyyy/MM
+      archive_pagination: false
+      archive_toc: true
+      archive_url_date_format: yyyy
       archive_url_format: "{date}"
       authors_file: "{blog}/.authors.yml"
       authors_profiles: true
+      authors_profiles_toc: true
       blog_dir: .
+      categories_toc: true
       draft_on_serve: !ENV [MKDOCS_PLUGIN_BLOG_DRAFT_SERVE, true]
       draft_if_future_date: !ENV [MKDOCS_PLUGIN_BLOG_DRAFT_FUTURE_DATE, false]
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
@@ -158,6 +163,7 @@ markdown_extensions:
       pygments_lang_class: true
       use_pygments: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.smartsymbols
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
