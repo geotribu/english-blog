@@ -17,6 +17,7 @@ tags:
     - Plugin QGIS
     - PyQGIS
     - Python
+    - QGIS
     - VS Code
     - Windows
 title: "Creating a Python virtual environment for PyQGIS development with VS Code on Windows"
