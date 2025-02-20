@@ -35,3 +35,10 @@ authors:
     slug: florent-fougeres
     url: https://geotribu.fr/team/florent-fougeres/
     email: florent.fougeres@gmail.com
+  tszczurek:
+    avatar: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/photo_id_tsg.png
+    description: GIS Enthousiast
+    name: Thomas Szczurek-Gayant
+    slug: thomas-szczurek-gayant
+    url: https://geotribu.fr/team/thomas-szczurek-gayant/
+    email: thomas.szczurek@gmail.com
