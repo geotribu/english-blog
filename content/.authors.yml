@@ -35,6 +35,13 @@ authors:
     slug: florent-fougeres
     url: https://geotribu.fr/team/florent-fougeres/
     email: florent.fougeres@gmail.com
+  suricactus:
+    avatar: https://avatars.githubusercontent.com/u/2820439?v=4
+    description: Bulgaria's BG
+    name: Ivan Ivanov
+    slug: ivan-ivanov
+    url: /about
+    email: ivan.ivanov@suricactus.com
   tszczurek:
     avatar: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/photo_id_tsg.png
     description: GIS Enthousiast
