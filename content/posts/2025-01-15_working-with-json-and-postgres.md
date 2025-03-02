@@ -136,7 +136,7 @@ For the adventurous, there's a PostgreSQL extension called `btree_gin` that allo
 
 ## Table creation
 
-I'm not going to spam you with Data Definition Language (<https://en.wikipedia.org/wiki/Data_definition_language>), but you can find the complete database schema [here](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables).
+I'm not going to spam you with Data Definition Language (<https://en.wikipedia.org/wiki/Data_definition_language>), but you can find the complete database schema [here](https://gitlab.com/Thomas_szczurek_gayant/bd_insee/-/tree/main/sql/creation_tables?ref_type=heads).
 
 However, here's a brief diagram to help you understand the rest of the article:
 
