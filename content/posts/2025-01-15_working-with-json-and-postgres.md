@@ -468,7 +468,7 @@ ORDER BY fk_base, clef_json;
 The only difficulty here is the presence of [LATERAL](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM). This “word” allows you to use a field from the main query in a subquery placed in a FROM clause. The elements of the subquery will then be evaluated atomically before being joined to the original table. Yes, it's not very easy to explain. Here, the WHERE of the subquery will query the `donnees` field of the “donnees_communes” table to see if it sees the clef_json (json key) being evaluated in the “correspondance_clefs_champs” table with alias “c”. If so, we take the minimum/maximum value of the year field and attach it to this line and this line only. Then evaluate the following clef_json ... (*evaluated atomically*)
 
 Now we'd like to offer a product that's a little easier to use with all this. Excuse me in advance, I'll copy a 50-line query a second time.
-The only table used here that we haven't created is a `zonages_administratifs` table containing municipalities codes in a `code_admin` field and a `fk_type` field containing the type of administrative zoning (1 for communes).
+The only table used here that we haven't created is a `zonages_administratifs` table containing municipalities codes in a `code_admin` field and a `fk_type` field containing the type of administrative zoning (1 for municipalities).
 
 ```sql title="Creation of the embellished materialized view" linenums="1"
 CREATE MATERIALIZED VIEW insee.donnees_communes_olap AS
