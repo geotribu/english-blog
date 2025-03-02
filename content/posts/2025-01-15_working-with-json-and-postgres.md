@@ -30,7 +30,7 @@ As part of a personal project, I wanted to store a large part of the INSEE's fre
 
 Since we're going to be talking about JSON and semi-structured data, I feel obliged to start this article with a warning.
 
-**The relational model is good, eat it up, and integrity constraints were invented for good reason.
+**The relational model is good, eat it up, and integrity constraints were invented for good reason.**
 
 This article is not intended to be an invitation to go into YOLO mode on data management: “all you have to do is put everything in JSON” (like a vulgar dev who would put everything in MongoDB, as the bad tongues would say).
 
@@ -118,7 +118,7 @@ PostgreSQL is able to store data/objects in json format in fields that are assig
 
 ![icône index](https://cdn.geotribu.fr/img/logos-icones/divers/index_pointeur.webp){: .img-thumbnail-left }
 
-It is possible to index a `json` / `jsonb` field on its **first-level** keys, and this is done with `GIN` type indexes:
+It is possible to index a `json` / `jsonb` field on its **first-level** keys, and this is done with [`GIN`](https://www.postgresql.org/docs/current/gin.html) type indexes:
 
 ```sql
 CREATE INDEX idx_tb_jsonfield ON tb USING gin (jsonfiled);
@@ -443,7 +443,7 @@ returning *;
 
 `-` is an operator used to remove a key from a json object. For our UPDATE, we therefore remove our typo from the entire object. In addition, we concatenate everything else with the construction of a new object in which we correct the key name. We also assign the value of the key being deleted, which is still usable at UPDATE time, to the fields that originally contained it with `?`.
 
-## Now what? What do we do with this?
+## Now what ? What do we do with this ?
 
 So far, we've only worked with the population component for its latest version. Let's now imagine that we repeat the exercise for all 6 sections and over several years, bearing in mind that over time, certain fields may appear or disappear; changes in the levels of diplomas observed, for example. It would be interesting to retrieve a table showing the first and last year of presence of each key. Let's just say that during this work, we took the opportunity to update a “correspondance_clefs_champs” table listing each key present and its original INSEE name (at least, the one we had standardized).
 
