@@ -55,7 +55,7 @@ Values can take two forms:
 - or an array, a list, enclosed in `[]`, both of which can be combined in a single JSON object.
 
 ```json
-{"prenoms": ["first_name", "roger", "fatima"], "nb_mushrooms": 42}
+{"prenoms": ["elodie", "roger", "fatima"], "nb_mushrooms": 42}
 ```
 
 What we call an object is everything between the `{}` used to declare it. To make things even more complex, we can nest objects and give you an example that's a little more meaningful than talking about tomatoes and mushrooms:
@@ -112,7 +112,7 @@ PostgreSQL is able to store data/objects in json format in fields that are assig
 
 - The `json` type is there for historical reasons, to allow databases that used this type in the past to function. It stores information in text form, which is not optimized for a computer. There is, however, an advantage to using it: it allows you to retrieve information on key order. If it's important for you to know that `name` is key 1 and `firstname` is key 2, without having to go through the key name again, then you'll need to use the `json` type.
 
-- the `jsonb` type. The modern type. It stores information in binary form and offers a lott of functions in addition to those of the `json` type.
+- the `jsonb` type. The modern type. It stores information in binary form and offers a lot of functions in addition to those of the `json` type.
 
 ## Indexes
 
@@ -192,7 +192,7 @@ INSERT INTO insee.bases (nom) VALUES
 ('rp_emploi')
 ```
 
-## Insertion de données et récupération
+## Data insertion and retrieval
 
 To pass text/SQL data to JSON-encoded data in the appropriate dedicated field, PostgreSQL has [*some* functions](https://www.postgresql.org/docs/current/functions-json.html). We're going to use the `jsonb_object()` function, which transforms a sql `array` in the form `key1, value1, key2, value2 ....` into a `jsonb` object with only one nesting level. Other functions are available for more complex objects (such as `jsonb_build_object()`).
 
@@ -287,7 +287,7 @@ Let's retrieve the latest population data from the municipal census [in csv form
 
 All field names begin with P or C, indicating *main survey* (raw answers to census questions) or *complementary survey* (cross-referencing of answers to establish an indicator). Fields from the main survey and those from the complementary survey must not be cross-referenced. This information should obviously be kept, but for personal reasons, I prefer to put it at the end of the name rather than at the beginning. In this way, we move from normalized fields such as `P18_POP` to a normalization of this type `POP_P`.
 
-You'll find [here](https://github.com/thomas-szczurek/base_donnees_insee/blob/main/sql/import/correction_champs_insee.xlsx) a spreadsheet to take care of all this.
+You'll find [here](https://gitlab.com/Thomas_szczurek_gayant/bd_insee/-/blob/main/sql/import/correction_champs_insee.xlsx?ref_type=heads) a spreadsheet to take care of all this.
 
 Before inserting the data into our table, we'll go through a temporary table to make the data accessible in Postgres. Using Postgresql's `COPY` would be tedious, as you'd have to specify the hundred or so fields contained in the census population section of the command. And I'm not ashamed to say that I've got a baobab in my hand at the thought. So we pull out this wonderful software called QGIS. We activate the Explorer and Explorer2 panels. We create a connection to the database with creation rights, and with a graceful flick of the wrist, we drag the file from the Explorer panel to the Postgres database in Explorer2. Let the magic happen.
 
@@ -421,7 +421,7 @@ FROM d
 ORDER BY "CODGEO";
 ```
 
-*Ouf.*
+*Wow.*
 
 ![Overview of the donnees_communes table after data insertion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/donnees_communes.png){: .img-center loading=lazy }
 
