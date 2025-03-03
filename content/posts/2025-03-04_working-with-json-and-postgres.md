@@ -15,8 +15,9 @@ links:
   - Original version (French): https://geotribu.fr/articles/2025/2025-01-21_travailler-avec-JSON-et-PostgreSQL/
 robots: index, follow
 tags:
-    - PostgreSQL
     - JSON
+    - PostgreSQL
+
 ---
 
 # Working with JSON in PostgreSQL
