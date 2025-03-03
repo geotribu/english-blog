@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2025-02-27
+date: 2025-03-04
 description: "Store data in json format in PostgreSQL, consult it... and all this using INSEE french census data as an example. "
 icon: simple/postgresql
 image:
