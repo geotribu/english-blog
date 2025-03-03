@@ -4,10 +4,10 @@ subtitle: Jason and the elephants
 authors:
     - tszczurek
 categories:
-    - article
+    - Article
 comments: true
 date: 2025-03-04
-description: "Store data in json format in PostgreSQL, consult it... and all this using INSEE french census data as an example. "
+description: "Store data in JSON format in PostgreSQL, consult it... and all this using INSEE french census data as an example."
 icon: simple/postgresql
 image:
 license: default
