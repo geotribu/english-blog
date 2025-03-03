@@ -233,7 +233,7 @@ qgis-dbg                  qgis-server               qgis-server-wfs
 qgis-plugin-grass         qgis-server-bin           qgis-server-wfs3
 ```
 
-![Available packages starting par 'qgis'](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/ubuntu_apt_install_qgis_autocompletion.webp){: .img-center loading=lazy }
+![Available packages starting par 'qgis'](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/ubuntu_apt_install_qgis_autocompletion.webp){: .img-center-noborder loading=lazy }
 
 Unless you have special needs, it's always best to install only the minimum required. In my case, that's `qgis`... and that's more than enough, as it's already collecting a whole bunch of packages:
 

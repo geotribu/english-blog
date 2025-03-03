@@ -1,12 +1,5 @@
 # see: https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.authors_file
 authors:
-  gallaman:
-    avatar: https://avatars.githubusercontent.com/u/40383801
-    description: GIS developer of fun
-    name: Guilhem Allaman
-    slug: guilhem-allaman
-    url: https://geotribu.fr/team/guilhem-allaman/
-    email: dev@guilhemallaman.net
   geotribu:
     avatar: https://raw.githubusercontent.com/geotribu/english-blog/refs/heads/main/content/theme/assets/images/geotribu/logo_geotribu.png
     description: GIS Tribe
@@ -14,6 +7,13 @@ authors:
     slug: geotribu-team
     url: /about
     email: geotribu+en@gmail.com
+  gounux:
+    avatar: https://avatars.githubusercontent.com/u/40383801
+    description: GIS developer of fun
+    name: Guilhem Allaman
+    slug: guilhem-allaman
+    url: https://geotribu.fr/team/guilhem-allaman/
+    email: dev@guilhemallaman.net
   jmoura:
     avatar: https://cdn.geotribu.fr/img/internal/contributeurs/jmou.jfif
     description: GIS Watchman
@@ -35,6 +35,13 @@ authors:
     slug: florent-fougeres
     url: https://geotribu.fr/team/florent-fougeres/
     email: florent.fougeres@gmail.com
+  suricactus:
+    avatar: https://avatars.githubusercontent.com/u/2820439?v=4
+    description: Bulgaria's BG
+    name: Ivan Ivanov
+    slug: ivan-ivanov
+    url: /about
+    email: ivan.ivanov@suricactus.com
   tszczurek:
     avatar: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/photo_id_tsg.png
     description: GIS Enthousiast

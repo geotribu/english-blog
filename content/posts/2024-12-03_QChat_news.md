@@ -1,6 +1,6 @@
 ---
 authors:
-  - gallaman
+  - gounux
 categories:
   - Article
 comments: true
