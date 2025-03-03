@@ -1,6 +1,6 @@
 ---
 authors:
-  - gallaman
+  - gounux
   - jmoura
 categories:
   - Article
