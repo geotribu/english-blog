@@ -530,7 +530,3 @@ ogr2ogr -of parquet donnees_insee.parquet PG:"dbname='insee' schema='insee' tabl
 ```
 
 And then you can put the file on a cloud space, like [here](https://donnees-insee.s3.fr-par.scw.cloud/donnees_insee_olap.parquet)! You can then get out your best Linkedin publication generator, which will put lots of cute emojis, and show off on social networks (imagine that 90% of Linkedin content has to be made with these things, which are able to generate publications explaining that one of the few advantages of shape over geopackage is that it's a multi-file format, all in a very confident tone).
-
-<!-- geotribu:authors-block -->
-
-{% include "licenses/cc4_by-nc-sa.md" %}
