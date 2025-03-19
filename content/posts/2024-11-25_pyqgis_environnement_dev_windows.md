@@ -89,6 +89,42 @@ I will assume that you have installed QGIS in the `C:\OSGeo4W` directory (the pr
     command = C:\OSGeo4W\apps\Python312\python.exe -m venv --system-site-packages <The full path to your venv>
     ```
 
+### With the _qgis-venv-creator_ utility
+
+> Paragraph added in March 2025
+
+![Gispo logo](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/Gispo.webp){: .img-thumbnail-left }
+
+Just after this article was published, we discovered [the create-qgis-venv project](https://github.com/GispoCoding/qgis-venv-creator) by GispoCoding.
+
+It is a multi-platform command-line tool (CLI). It is recommended to install it using [pipx](https://pipx.pypa.io/stable/#on-windows), which handles most of the tricky setup and is compatible with Windows. It's now the recommended tool in the Python community for managing command-line tools (CLI), so this is a great opportunity to start using it. Once pipx is installed, configured (`ensurepath`...), and a new PowerShell session is started, the installation runs smoothly:
+
+```powershell title="Installing qgis-venv-creator with pipx"
+pipx install qgis-venv-creator
+```
+
+![Installing qgis-venv-creator with pipx](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/powershell_pipx_qgis-venv-creator.webp){: .img-center loading=lazy }
+
+The qgis-venv-creator tool is now accessible from any PowerShell session with the following command:
+
+```powershell title="Basic command for qgis-venv-creator"
+create-qgis-venv --venv-name ".venv"
+```
+
+The tool needs to identify the QGIS installation to use for generating the development environment. By default, it searches in `C:\OSGeo4W` and `C:\PROGRAMFILES\QGIS X.y.z`. However, if you are meticulous and use QGIS in a professional environment, you probably install it in a location recommended by the operating system, such as `%PROGRAMFILES%/QGIS/X_y`. You can specify a _pattern_ to indicate where it should look:
+
+```powershell title="qgis-venv-creator with a custom QGIS installation path"
+create-qgis-venv --qgis-installation-search-path-pattern "C:\Program Files\QGIS\*\apps\qgis*" --venv-name ".venv"
+```
+
+<iframe title="qgis-venv-creator demonstration" width="100%" height="400" src="https://video.osgeo.org/videos/embed/9b5806ca-d489-443f-8edc-d6be9b9a83c6" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+
+Simply activate your virtual environment `.venv/Scripts/activate` and continue this tutorial!  
+Thanks, Gispo!
+
+!!! tip
+    Good news, it does also work on Linux 🥳 🐧!
+
 ----
 
 ## In VS Code
