@@ -342,4 +342,3 @@ By integrating `NGINX`, `Xvfb`, and `FastCGI`, the image ensures smooth operatio
 
 <!-- geotribu:authors-block -->
 
-{% include "licenses/default.md" %}
