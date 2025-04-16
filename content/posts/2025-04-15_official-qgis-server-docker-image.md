@@ -2,7 +2,7 @@
 title: "What’s under the hood of the official QGIS Server Docker image?"
 subtitle: (boo !)
 authors:
-    - Paul BLOTTIERE
+    - pblottiere
 categories:
     - article
 comments: true
