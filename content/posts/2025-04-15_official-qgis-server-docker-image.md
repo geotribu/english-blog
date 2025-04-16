@@ -31,7 +31,6 @@ As a quick reminder, QGIS Server is an open-source web mapping server solution�
 
 The official QGIS Server documentation explains in detail how to [install QGIS Server](https://docs.qgis.org/3.40/fr/docs/server_manual/getting_started.html) natively, i.e. directly from your platform or distribution’s package repositories. However, there are very few resources available when it comes to containerized deployment. That’s why in this article, we’ll take a look at how and why using the official QGIS Server Docker image makes deployment much easier.
 
-
 ## Technical ecosystem
 
 ![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.svg){: .img-thumbnail-left }
