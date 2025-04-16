@@ -341,4 +341,3 @@ The official QGIS Server Docker image greatly simplifies the deployment of this 
 By integrating `NGINX`, `Xvfb`, and `FastCGI`, the image ensures smooth operation of QGIS Server in a containerized environment. It also provides the option to use an external web server, like NGINX, to separate functions and have better control over configurations
 
 <!-- geotribu:authors-block -->
-
