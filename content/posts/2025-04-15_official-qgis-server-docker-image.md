@@ -114,7 +114,6 @@ Previously, we started the QGIS Server container in interactive mode using the `
 
 The startup script used, located in the container's filesystem, can be found at `/usr/local/bin/start-xvfb-nginx.sh`, and its path can be obtained by inspecting the image.
 
-{% raw %}
 
 ```bash title="Inspecting the image to locate the startup script"
 # Retrieving the startup script path
@@ -125,7 +124,6 @@ $ docker inspect -f '{{.Config.Cmd}}' qgis/qgis-server:ltr
 $ docker run qgis/qgis-server:ltr cat /usr/local/bin/start-xvfb-nginx.sh
 ```
 
-{% endraw %}
 
 By examining the contents of this script, we can observe the startup sequence of the third-party utilities mentioned above:
 
