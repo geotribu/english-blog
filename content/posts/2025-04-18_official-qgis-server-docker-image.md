@@ -25,11 +25,11 @@ tags:
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
 
-The last Geotribu article about [deploying QGIS Server](https://geotribu.fr/articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis/) dates back to 2010 :scream:! At the time, Docker wasn’t part of deployment practices, since it only became available in 2013. So now, with the official QGIS Server Docker image released last year, it’s time for us to catch up!
+Since the last Geotribu article about [deploying QGIS Server](https://geotribu.fr/articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis/) dates back to 2010, the release of an official QGIS Server Docker image last year is a great opportunity to catch up!
 
 As a quick reminder, QGIS Server is an open-source web mapping server solution—similar to [GeoServer](https://geoserver.org/) or [MapServer](https://mapserver.org/)—that allows you to serve maps and geospatial data on the web. It relies on OGC (Open Geospatial Consortium) standards to provide interoperable services. QGIS Desktop offers a graphical interface for users to create and edit their maps.
 
-The official QGIS Server documentation explains in detail how to [install QGIS Server](https://docs.qgis.org/3.40/fr/docs/server_manual/getting_started.html) natively, i.e. directly from your platform or distribution’s package repositories. However, there are very few resources available when it comes to containerized deployment. That’s why in this article, we’ll take a look at how and why using the official QGIS Server Docker image makes deployment much easier.
+The official QGIS Server documentation explains in detail how to [install QGIS Server](https://docs.qgis.org/3.40/fr/docs/server_manual/getting_started.html) natively, i.e. directly from your platform or distribution’s package repositories. After the official QGIS Server image was released last year, Anita Graser shared a great [post](https://anitagraser.com/2024/04/20/qgis-server-docker-edition/) about its usage. However, comprehensive resources on containerized deployment remain limited. That’s why in this article, we’ll take a look at how and why using the official QGIS Server Docker image makes deployment much easier.
 
 ## Technical ecosystem
 
@@ -147,7 +147,7 @@ spawn-fcgi -n -u ${QGIS_USER:-www-data} -g ${QGIS_USER:-www-data} -d ${HOME:-/va
 
 ![logo nginx](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/nginx.svg){: .img-thumbnail-left }
 
-The NGINX web server configuration is deployed by replacing the default configuration file `/etc/nginx/nginx.conf`:
+The NGINX web server is configured by substituting its default configuration file `/etc/nginx/nginx.conf` with a customized one to ensure that the server behaves as desired.
 
 ```bash title="Displaying the contents of the NGINX configuration file"
 $ docker run -it qgis/qgis-server:ltr cat /etc/nginx/nginx.conf
