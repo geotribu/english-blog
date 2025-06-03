@@ -137,7 +137,7 @@ For the adventurous, there's a PostgreSQL extension called `btree_gin` that allo
 
 ## Table creation
 
-I'm not going to spam you with Data Definition Language (<https://en.wikipedia.org/wiki/Data_definition_language>), but you can find the complete database schema [here](https://gitlab.com/Thomas_szczurek_gayant/bd_insee/-/tree/main/sql/creation_tables?ref_type=heads).
+I'm not going to spam you with [Data Definition Language](https://en.wikipedia.org/wiki/Data_definition_language), but you can find the [complete database schema here](https://gitlab.com/Thomas_szczurek_gayant/bd_insee/-/tree/main/sql/creation_tables?ref_type=heads).
 
 However, here's a brief diagram to help you understand the rest of the article:
 
@@ -288,7 +288,7 @@ Let's retrieve the latest population data from the municipal census [in csv form
 
 All field names begin with P or C, indicating *main survey* (raw answers to census questions) or *complementary survey* (cross-referencing of answers to establish an indicator). Fields from the main survey and those from the complementary survey must not be cross-referenced. This information should obviously be kept, but for personal reasons, I prefer to put it at the end of the name rather than at the beginning. In this way, we move from normalized fields such as `P18_POP` to a normalization of this type `POP_P`.
 
-You'll find [here](https://gitlab.com/Thomas_szczurek_gayant/bd_insee/-/blob/main/sql/import/correction_champs_insee.xlsx?ref_type=heads) a spreadsheet to take care of all this.
+You'll find [here a spreadsheet](https://gitlab.com/Thomas_szczurek_gayant/bd_insee/-/blob/main/sql/import/correction_champs_insee.xlsx?ref_type=heads) to take care of all this.
 
 Before inserting the data into our table, we'll go through a temporary table to make the data accessible in Postgres. Using Postgresql's `COPY` would be tedious, as you'd have to specify the hundred or so fields contained in the census population section of the command. And I'm not ashamed to say that I've got a baobab in my hand at the thought. So we pull out this wonderful software called QGIS. We activate the Explorer and Explorer2 panels. We create a connection to the database with creation rights, and with a graceful flick of the wrist, we drag the file from the Explorer panel to the Postgres database in Explorer2. Let the magic happen.
 
@@ -529,4 +529,4 @@ And for that, we're going to use GDAL, which is truly incredible.
 ogr2ogr -of parquet donnees_insee.parquet PG:"dbname='insee' schema='insee' tables='donnees_communes_olap' user='user_name' password='your_password'"
 ```
 
-And then you can put the file on a cloud space, like [here](https://donnees-insee.s3.fr-par.scw.cloud/donnees_insee_olap.parquet)! You can then get out your best Linkedin publication generator, which will put lots of cute emojis, and show off on social networks (imagine that 90% of Linkedin content has to be made with these things, which are able to generate publications explaining that one of the few advantages of shape over geopackage is that it's a multi-file format, all in a very confident tone).
+And then you can put the [file on a cloud space, like here](https://donnees-insee.s3.fr-par.scw.cloud/donnees_insee_olap.parquet)! You can then get out your best Linkedin publication generator, which will put lots of cute emojis, and show off on social networks (imagine that 90% of Linkedin content has to be made with these things, which are able to generate publications explaining that one of the few advantages of shape over geopackage is that it's a multi-file format, all in a very confident tone).
