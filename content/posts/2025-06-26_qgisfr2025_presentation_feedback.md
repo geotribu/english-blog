@@ -28,7 +28,7 @@ Mid-June, [the French-speaking QGIS User Conference](https://conf.qgis.osgeo.fr/
 
 <!-- more -->
 
-The french-speaking QGIS community could meet, discuss and share some insightful ideas and moments together. The conference brought over 280 people from the 6 corners of France including _Antilles_, as well as Belgium, Switzerland, Canada, and french-speaking Africa. The QGIS-fr User Conference, using the **#QGISFR2025** hashtag on social media, proposed events during 3 days :
+The french-speaking QGIS community could meet, discuss and share some insightful ideas and moments together. The conference brought over 280 people from the 6 corners of France including _Antilles_, as well as Belgium, Togo, Switzerland. The QGIS-fr User Conference, using the **#QGISFR2025** hashtag on social media, proposed events during 3 days :
 
 - during day 1, participants were able to take part to the 20 proposed workshops, on a variety of balanced QGIS topics. Approximately 200 people attended to that day. On the evening was also organized a shared aperitif and dinner.
 - day 2 was the conference day, with no less than 12 insightful talks, which showcased interesting usages and strategies around QGIS for the 220 attendants.
