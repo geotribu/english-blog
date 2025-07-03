@@ -31,6 +31,9 @@ Mid-June, [the French-speaking QGIS Users Meeting](https://conf.qgis.osgeo.fr/) 
 The french-speaking QGIS community could meet, discuss and share some insightful ideas and moments together. The conference brought over 280 people from the 6 corners of France including _Guadeloupe_, as well as Belgium, Togo, Switzerland. The QGIS-fr Users Meeting, using the _#QGISFR2025_ hashtag on social media, proposed events during 3 days :
 
 - during day 1, participants were able to take part to the 20 proposed workshops, on a variety of balanced QGIS topics. Approximately 200 people attended to that day. On the evening was also organized a shared aperitif and dinner.
+
+![QGISFR2025 shared "aperitif" on first day evening - Photo from Marjorie Fangain](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgisfr2025/qgisfr2025_aperitif.webp){: .img-center loading=lazy }
+
 - day 2 was the conference day, with no less than 12 insightful talks, which showcased interesting usages and strategies around QGIS for the 220 attendants.
 - day 3 was devoted to contributions to the QGIS project, focusing on 5 axis : development, funding, documentation, translation and communication. Approximately 75 people attended to that day.
 
