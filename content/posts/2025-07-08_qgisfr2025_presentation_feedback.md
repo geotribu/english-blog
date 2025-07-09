@@ -12,6 +12,7 @@ icon: material/human-greeting-proximity
 license: beerware
 links:
   - QGIS-fr website: https://conf.qgis.osgeo.fr/
+  - QGIS.org blog post: https://blog.qgis.org/2025/07/06/presentation-and-feedback-from-the-qgis-fr-users-meeting-in-avignon/
 pin: false
 tags:
     - Avignon
@@ -46,3 +47,5 @@ The money raised by participants and sponsors registrations will be used to fina
 ![The Avignon unterminated Bridge over the Rhône river - Photo from Margaux Pontier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgisfr2025/qgisfr2025_avignon_bridge.webp){: .img-center loading=lazy }
 
 OSGeo-fr is already looking forward to next year : the next edition will be held in March, in Brest - Brittany region, a place often described as "_the End of the World_". The 2026 QGIS-fr Users Meeting will be organized in collaboration with [the UMR LETG](https://letg.cnrs.fr/) Unit.
+
+_This blog post can also be found [on the QGIS.org blog](https://blog.qgis.org/2025/07/06/presentation-and-feedback-from-the-qgis-fr-users-meeting-in-avignon/)._
