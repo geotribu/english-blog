@@ -28,17 +28,17 @@ After [a somewhat shaky first version](./2024-10-18_introducing-QChat-chat-rooms
 
 The new version of QChat is a bit like when [Com Truise](https://www.youtube.com/watch?v=L4ENAdECytk) gets on a motorbike: it really gets the blood pumping!
 
-![A bicycle disguised as a motorbike with cardboard.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/velo_deguise_en_moto.png){: .img-center loading=lazy }
+![A bicycle disguised as a motorbike with cardboard](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/velo_deguise_en_moto.png){: .img-center loading=lazy }.
 
 <!-- more -->
 
 _A photo shamelessly stolen from Mastodon... If you know the author, please contact us!_
 
-## Why ?
+## Why?
 
 The first version of QChat was quite rudimentary and not very scalable. In practical terms, due to its rather limited initial design, the API could only run on a single [uvicorn worker](https://fastapi.tiangolo.com/deployment/server-workers/), i.e. a single system process. This could lead to a limit on the number of people connected simultaneously.
 
-We realised this [during the last QGIS-fr Users Meetings in Avignon](https://video.osgeo.org/w/cabBYiLUoRAZZbLp2CTRj7), and during the quiz in particular :cold_sweat:
+We realised this [during the last QGIS-fr Users Meetings in Avignon](https://video.osgeo.org/w/cabBYiLUoRAZZbLp2CTRj7), and during [the quizz](https://slides.geotribu.net/2025-06-11_qchat_qgisfr2025.html#/0/24) in particular :cold_sweat:
 
 _Patatra_...
 
