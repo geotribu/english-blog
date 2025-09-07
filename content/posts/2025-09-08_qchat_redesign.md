@@ -6,7 +6,7 @@ authors:
 categories:
   - Article
 comments: true
-date: 2025-09-03
+date: 2025-09-08
 description: Reasons and technical explanations for the redesign of QChat, the system for chatting with peers in QGIS.
 icon: material/chat
 license: beerware
@@ -85,8 +85,10 @@ graph TD
     Worker2 --> |7📦 Broadcasts the message| Redis
     Redis --> |8📦 Broadcasts the message| Worker1
     Worker1 --> |9📦 Broadcasts the message| QGIS1
-
 ```
+
+!!! info
+    The "default" Geotribu server is located at `qchat.geotribu.net`, and offers one channel per language/country: `QGIS-fr`, `QGIS-es`, `QGIS-de`, `QGIS-it`... It is also possible to set up your own server [by following the instructions on the `gischat` repository](https://github.com/geotribu/gischat#deploy-a-self-hosted-instance).
 
 ## Creation of the official QGIS plugin: `QChat`
 
