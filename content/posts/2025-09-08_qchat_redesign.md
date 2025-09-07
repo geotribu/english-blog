@@ -28,7 +28,7 @@ After [a somewhat shaky first version](./2024-10-18_introducing-QChat-chat-rooms
 
 The new version of QChat is a bit like when [Com Truise](https://www.youtube.com/watch?v=L4ENAdECytk) gets on a motorbike: it really gets the blood pumping!
 
-![A bicycle disguised as a motorbike with cardboard](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/velo_deguise_en_moto.png){: .img-center loading=lazy }.
+![A bicycle disguised as a motorbike with cardboard](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/velo_deguise_en_moto.png){: .img-center loading=lazy }
 
 <!-- more -->
 
