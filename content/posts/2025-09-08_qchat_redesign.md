@@ -34,6 +34,12 @@ The new version of QChat is a bit like when [Com Truise](https://www.youtube.com
 
 _A photo shamelessly stolen from Mastodon... If you know the author, please contact us!_
 
+## Q...what !? QChat !
+
+[_QChat_](https://plugins.qgis.org/plugins/qchat/) is a chat that integrates into QGIS as a panel, allowing you to share text messages, images, screenshots, lightweight vector data, etc., with other connected users.
+
+![QChat panel in QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/screen_qchat_qgis.webp){: .img-center loading=lazy }
+
 ## Why?
 
 The first version of QChat was quite rudimentary and not very scalable. In practical terms, due to its rather limited initial design, the API could only run on a single [uvicorn worker](https://fastapi.tiangolo.com/deployment/server-workers/), i.e. a single system process. This could lead to a limit on the number of people connected simultaneously.
@@ -124,9 +130,7 @@ In the future, we will do our best to make it available on the QField plugin rep
 
 ## What's next?
 
-There is now a single instance served by Geotribu: [`qchat.geotribu.net`](https://qchat.geotribu.net). On it, you can find channels by language.
-
-And there are always new ideas and features to develop in QChat. Here are some of the ones we're thinking about:
+There are always new ideas and features to develop in QChat. Here are some of the ones we're thinking about:
 
 - Adding a small form for sending emojis :joy_cat:
 - Sharing graphic models between multiple clients connected to QChat.
