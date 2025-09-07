@@ -1,5 +1,5 @@
 ---
-title: The redesign of QChat
+title: QChat as it never was
 subtitle: Choose your channel, comrade
 authors:
   - gounux
