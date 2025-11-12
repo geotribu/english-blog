@@ -27,10 +27,8 @@ Objectifs :
 # standard library
 import logging
 from pathlib import Path
-from typing import Optional
 
 # Mkdocs
-from material import __version__ as material_version
 from material.plugins.social.plugin import SocialPlugin
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import event_priority
@@ -52,7 +50,7 @@ hook_name = Path(__file__).stem
 @event_priority(50)
 def on_page_markdown(
     markdown: str, *, page: Page, config: MkDocsConfig, files: Files
-) -> Optional[str]:
+) -> str | None:
     """
     The `page_markdown` event is called after the page's markdown is loaded
     from file and can be used to alter the Markdown source text. The meta-
