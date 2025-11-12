@@ -1,4 +1,4 @@
-exclude: "node_modules|migrations|.venv|tests/dev/|tests/fixtures/"
+exclude: ".venv|tests/dev/|tests/fixtures/"
 
 repos:
   - repo: meta
@@ -25,7 +25,7 @@ repos:
     hooks:
       - id: pyupgrade
         args:
-          - "--py39-plus"
+          - "--py312-plus"
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: "v0.14.3"

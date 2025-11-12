@@ -44,9 +44,6 @@ from mkdocs.structure.pages import Page
 logger = logging.getLogger("mkdocs")
 hook_name = Path(__file__).stem
 
-# check si c'est la version Insiders (payante) ou la version Communauté (gratuite) du thème
-is_insiders = "insiders" in material_version
-
 # ###########################################################################
 # ########## Functions #############
 # ##################################
@@ -106,23 +103,22 @@ def on_page_markdown(
 
         # si la page a une icône, on adapte le template de l'image (disponible que pour Insiders)
         # ref : https://squidfunk.github.io/mkdocs-material/reference#setting-the-page-icon
-        if page.meta.get("icon") and is_insiders:
+        if page.meta.get("icon"):
             cards_layout = "default/variant"
             logger.info(
                 f"[{hook_name}] La page {page.abs_url} a une icône définie "
                 f"({page.meta.get('icon')}). Dans ce cas, le modèle de social "
                 f"card est : {cards_layout}"
             )
-        elif is_insiders:
+        else:
             cards_layout = social_plugin.config.cards_layout
 
         # définit les paramètres pour les social cards au niveau de la page
-        if is_insiders:
-            page.meta["social"] = {
-                "cards": True,
-                "cards_layout": cards_layout,
-                "cards_layout_options": social_plugin.config.cards_layout_options,
-            }
+        page.meta["social"] = {
+            "cards": True,
+            "cards_layout": cards_layout,
+            "cards_layout_options": social_plugin.config.cards_layout_options,
+        }
         # else:
         #     page.meta["social"] = {
         #         "cards": True,
