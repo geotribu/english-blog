@@ -41,7 +41,6 @@ theme:
   - changed-files:
       - any-glob-to-any-file:
           - content/theme/**/*
-          - requirements-insiders.txt
   - head-branch:
       - theme
       - ^theme
