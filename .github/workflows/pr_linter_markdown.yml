@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: "Grab source"
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       # Filter results by added/modified lines.
       - name: "Vérifie la syntaxe des lignes ajoutées ou modifiées"
