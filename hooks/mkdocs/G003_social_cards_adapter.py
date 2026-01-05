@@ -103,7 +103,7 @@ def on_page_markdown(
         # ref : https://squidfunk.github.io/mkdocs-material/reference#setting-the-page-icon
         if page.meta.get("icon"):
             cards_layout = "default/variant"
-            logger.info(
+            logger.debug(
                 f"[{hook_name}] La page {page.abs_url} a une icône définie "
                 f"({page.meta.get('icon')}). Dans ce cas, le modèle de social "
                 f"card est : {cards_layout}"
