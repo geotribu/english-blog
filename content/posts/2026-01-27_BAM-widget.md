@@ -23,24 +23,24 @@ tags:
 
 ![BAM widget logo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BAM-logo.webp){: .img-thumbnail-left }
 
-A new, open-source biodiversity widget developed by French National Parks and recognized internationally. 
+A new, open-source biodiversity widget developed by French National Parks and recognized internationally.
 It allows to display species observed around any given location.
 
 <!-- more -->
 
-At [Écrins national park](https://www.ecrins-parcnational.fr/) and [Cévennes national park](https://cevennes-parcnational.fr), 
-we love open-source geomatics, :elephant: databases, and open data! 
+At [Écrins national park](https://www.ecrins-parcnational.fr/) and [Cévennes national park](https://cevennes-parcnational.fr),
+we love open-source geomatics, :elephant: databases, and open data!
 Over the last 10 years, we have notably developed two open-source information systems:
 
 - [Geotrek](https://geotrek.fr) for managing and promoting trails.
 - [GeoNature](https://geonature.fr) for collecting, managing, and disseminating biodiversity data.
 
-These two tools are now used by more than 250 organizations in France. 
+These two tools are now used by more than 250 organizations in France.
 Several community members wanted to connect GeoNature and Geotrek by showcasing species observed along a hike.
 
 Rather than developing a component or module specific to our own tools, we looked for a more global and generic solution. Together with Amandine Sahl from Cévennes National Park, we envisioned an approach that could adapt to different contexts and various data sources.
 
-In recent years, open biodiversity data has grown exponentially thanks to international participatory programs ([iNaturalist](https://www.inaturalist.org/, [Pl@ntNet](https://plantnet.org/, [eBird](https://ebird.org/)...), professional and amateur naturalists, and national platforms like the [INPN](https://inpn.mnhn.fr/). However, these data are not always easily accessible to the general public.
+In recent years, open biodiversity data has grown exponentially thanks to international participatory programs ([iNaturalist](<https://www.inaturalist.org/>, [Pl@ntNet](<https://plantnet.org/>, [eBird](https://ebird.org/)...), professional and amateur naturalists, and national platforms like the [INPN](https://inpn.mnhn.fr/). However, these data are not always easily accessible to the general public.
 
 Our goal was to enable anyone to integrate, in just a few clicks, a list of species observed around a lodge, a trail, an event, or even a school into their website.
 
@@ -59,13 +59,13 @@ Simply provide a location or a search area, and the widget displays:
 - A photo.
 - Sometimes even an audio recording.
 
-All this information comes directly from major global open databases such as [GBIF](https://www.gbif.org/) or [Wikidata](https://www.wikidata.org/). 
+All this information comes directly from major global open databases such as [GBIF](https://www.gbif.org/) or [Wikidata](https://www.wikidata.org/).
 It can also pull from local sources like [GeoNature](https://geonature.fr/) via a system of connectors that can be expanded to include new data sources.
 
 ![BAM data architecture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BAM_architecture_data.webp){: .img-center loading=lazy }
 
-The tool requires no installation, no server, and no database. 
-It fetches up-to-date observations by querying API services. 
+The tool requires no installation, no server, and no database.
+It fetches up-to-date observations by querying API services.
 It works worldwide and is multilingual (French :flag_fr:, English :flag_gb:, Spanish :flag_es:, Italian :flag_it:, German :flag_de:, and even Czech :flag_cz: thanks to a [recent contribution by Jiří Podhorecký](https://github.com/PnX-SI/BAM-widget/pull/83)).
 
 Here is an example of the BAM widget integration, showing species observed within a 200m radius of the forestry school in Banco National Park, Abidjan:
