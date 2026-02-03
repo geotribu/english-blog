@@ -6,7 +6,7 @@ authors:
 categories:
   - Article
 comments: true
-date: 2026-01-27
+date: 2026-02-04
 description: A new biodiversity widget to display species observed around a location.
 icon: material/bee-flower
 license: default
@@ -93,7 +93,7 @@ Cévennes National Park has already integrated it into the trail webpages of its
 
 ## International Recognition
 
-On October 24, 2025, in Bogotá, Colombia, BAM received an award at the [Ebbe Nielsen Challenge](https://www.gbif.org/news/2LugQxJfG2kCzjiJocXzVZ/winners-from-norway-and-australia-share-first-place-in-the-2025-ebbe-nielsen-challenge), organized by GBIF. This annual competition rewards the best applications using open biodiversity data.
+On October 24, 2025, in Bogotá, Colombia, BAM received an award at the [Ebbe Nielsen Challenge](https://www.gbif.org/news/2LugQxJfG2kCzjiJocXzVZ/winners-from-norway-and-australia-share-first-place-in-the-2025-ebbe-nielsen-challenge), organized by [GBIF](https://www.gbif.org/). This annual competition rewards the best applications using open biodiversity data.
 
 ![The National Parks team behind the BAM widget](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BAM_equipe_parcs-nationaux.webp){: .img-center loading=lazy }
 
