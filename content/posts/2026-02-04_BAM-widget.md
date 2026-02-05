@@ -40,7 +40,7 @@ Several community members wanted to connect GeoNature and Geotrek by showcasing 
 
 Rather than developing a component or module specific to our own tools, we looked for a more global and generic solution. Together with Amandine Sahl from Cévennes National Park, we envisioned an approach that could adapt to different contexts and various data sources.
 
-In recent years, open biodiversity data has grown exponentially thanks to international participatory programs ([iNaturalist](<https://www.inaturalist.org/>, [Pl@ntNet](<https://plantnet.org/>, [eBird](https://ebird.org/)...), professional and amateur naturalists, and national platforms like the [INPN](https://inpn.mnhn.fr/). However, these data are not always easily accessible to the general public.
+In recent years, open biodiversity data has grown exponentially thanks to international participatory programs ([iNaturalist](https://www.inaturalist.org/), [Pl@ntNet](https://plantnet.org/), [eBird](https://ebird.org/)...), professional and amateur naturalists, and national platforms like the [INPN](https://inpn.mnhn.fr/). However, these data are not always easily accessible to the general public.
 
 Our goal was to enable anyone to integrate, in just a few clicks, a list of species observed around a lodge, a trail, an event, or even a school into their website.
 
