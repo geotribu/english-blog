@@ -71,7 +71,7 @@ It works worldwide and is multilingual (French :flag_fr:, English :flag_gb:, Spa
 Here is an example of the BAM widget integration, showing species observed within a 200m radius of the forestry school in Banco National Park, Abidjan:
 
 <iframe
-        title="BAM - Banco naational park"
+        title="BAM - Banco national park"
         width="100%" height="640" allow="geolocation"
         src="https://pnx-si.github.io/BAM-widget/#/?widgetType=mapList&nbTaxonPerLine=4&primaryColor=009485&switchModeAvailable=true&showFilters=true&lang=en&buffer=200&x=-4.05224&y=5.38471"></iframe>
 
