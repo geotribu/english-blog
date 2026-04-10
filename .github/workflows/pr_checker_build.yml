@@ -56,7 +56,7 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
           MKDOCS_PLUGIN_BLOG_DRAFT_FUTURE_DATE: false
           MKDOCS_SITE_NAME: "Geotribu in English PREVIEW - PR ${{ github.event.pull_request.number }}"
-          MKDOCS_SITE_COPYRIGHT: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
+          MKDOCS_SITE_COPYRIGHT: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://commons.wikimedia.org/wiki/File:Netlify_logo.svg" style="float: right;"></a>'
         run: |
           # store custom env vars that need resolution
           export MKDOCS_EDIT_URI="edit/${GITHUB_HEAD_REF}/content"
