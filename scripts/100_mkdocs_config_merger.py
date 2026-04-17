@@ -1,10 +1,10 @@
 #! python3  # noqa: E265
 
 """
-Description: Merge different mkdocs configuration files from a directory.
+Description: Merge different properdocs configuration files from a directory.
 Author: Julien Moura (@Guts@github.com)
 
-Requires: MkDocs installed (it uses its YAML loader)
+Requires: properdocs installed (it uses its YAML loader)
 """
 
 # -- IMPORTS --
@@ -16,14 +16,16 @@ from pathlib import Path
 
 # 3rd party
 import yaml
-from mkdocs.utils import yaml_load
+from properdocs.utils.yaml import yaml_load
 
 # -- GLOBALS --
 logging.basicConfig(level=logging.INFO)
 
 # -- CLI --
 parser = argparse.ArgumentParser(
-    prog="MkDocsConfigMerger", description="Merge configuration files.", add_help=True
+    prog="ProperdocsConfigMerger",
+    description="Merge configuration files.",
+    add_help=True,
 )
 parser.add_argument(
     "-c",
@@ -31,7 +33,7 @@ parser.add_argument(
     dest="output_config_file",
     type=Path,
     help="Path to the configuration file to complete. Must exist.",
-    default="mkdocs.yml",
+    default="properdocs.yml",
 )
 parser.add_argument(
     "-i",
