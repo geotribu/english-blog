@@ -8,7 +8,7 @@ on:
       - ".github/workflows/deploy.yml"
       - "config/*.yml"
       - "content/**"
-      - "mkdocs.yml"
+      - "properdocs.yml"
       - "requirements*.txt"
   workflow_dispatch:
 
@@ -58,8 +58,8 @@ jobs:
 
       - name: Build static website
         run: |
-          python scripts/100_mkdocs_config_merger.py -c mkdocs.yml
-          mkdocs build --clean --config-file mkdocs.yml --verbose --strict
+          python scripts/100_mkdocs_config_merger.py -c properdocs.yml
+          properdocs build --clean --config-file properdocs.yml --verbose --strict
         env:
           MKDOCS_ENABLE_PLUGIN_BLOG: true
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true

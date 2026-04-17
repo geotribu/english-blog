@@ -4,7 +4,7 @@
 
 Contexte :
 
-    Le thème Material for Mkdocs intègre un plugin (social) qui permet de générer
+    Le thème Material for properdocs intègre un plugin (social) qui permet de générer
     automatiquement une image pour chaque page en croisant différents éléments
     (métadonnées de la page et éléments graphiques de base).
     Mais le fonctionnement est très générique (normal) et entre en conflit avec la gestion
@@ -30,10 +30,10 @@ from pathlib import Path
 
 # Mkdocs
 from material.plugins.social.plugin import SocialPlugin
-from mkdocs.config.defaults import MkDocsConfig
-from mkdocs.plugins import event_priority
-from mkdocs.structure.files import Files
-from mkdocs.structure.pages import Page
+from properdocs.config.defaults import MkDocsConfig
+from properdocs.plugins import event_priority
+from properdocs.structure.files import Files
+from properdocs.structure.pages import Page
 
 # ###########################################################################
 # ########## Global ################
@@ -66,14 +66,14 @@ def on_page_markdown(
         Markdown source text of page as string
     """
     # vérifie que le plugin social est bien installé et configuré
-    if not config.plugins.get("material/social"):
+    if not config.plugins.get("materialx/social"):
         logger.warning(
             f"[{hook_name}] Le plugin social du thème Material n'est pas présent. "
             "Ce hook est donc inutile."
         )
         return
 
-    social_plugin: SocialPlugin = config.plugins.get("material/social")
+    social_plugin: SocialPlugin = config.plugins.get("materialx/social")
 
     # vérifie que le plugin est activé
     if not social_plugin.config.enabled or not social_plugin.config.cards:

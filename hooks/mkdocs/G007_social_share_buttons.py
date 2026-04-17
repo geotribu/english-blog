@@ -21,9 +21,9 @@ import urllib.parse
 from textwrap import dedent
 
 # Mkdocs
-import mkdocs.plugins
-from mkdocs.config.defaults import MkDocsConfig
-from mkdocs.structure.pages import Page
+import properdocs.plugins
+from properdocs.config.defaults import MkDocsConfig
+from properdocs.structure.pages import Page
 
 # ###########################################################################
 # ########## Global ################
@@ -44,7 +44,7 @@ share_url_base_reddit = "http://www.reddit.com/submit"
 # ##################################
 
 
-@mkdocs.plugins.event_priority(-100)
+@properdocs.plugins.event_priority(-100)
 def on_page_markdown(markdown: str, page: Page, config: MkDocsConfig, **kwargs):
 
     if not regex_pattern_include.match(page.file.src_uri):

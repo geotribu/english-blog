@@ -75,12 +75,10 @@ plugins:
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
         color: "#56c29e"
         font_family: Ubuntu
-  - typeset:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TYPESET, true]
 
 # Theme
 theme:
-  name: "material"
+  name: materialx
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
 
@@ -131,6 +129,9 @@ theme:
       toggle:
         icon: material/weather-night
         name: Basculer sur le réglage système
+
+  topbar_style: primary
+
 
 # Customization
 extra:
