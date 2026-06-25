@@ -63,3 +63,10 @@ authors:
     slug: camille-monchicourt
     url: https://geotribu.fr/team/camille-monchicourt/
     email: camille.monchicourt@ecrins-parcnational.fr
+  marcducobu:
+    avatar: https://avatars.githubusercontent.com/u/1483144?s=40&v=4
+    description: GIS & Python Developer
+    name: Marc Ducobu
+    slug: marcu
+    url: https://geotribu.fr/team/marc-ducobu/
+    email: marc.ducobu@posteo.be

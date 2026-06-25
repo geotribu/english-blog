@@ -2,7 +2,7 @@
 title: How to share your QGIS models easily
 subtitle: Five methods for easily sharing a QGIS model
 authors:
-  - Marc Ducobu
+  - marcducobu
 categories:
   - Article
 comments: true
