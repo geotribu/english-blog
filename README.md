@@ -4,4 +4,31 @@
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
-Geotribu in English, translated or original blog posts around GIS and geo*.
+Geotribu in English, translated or original blog posts around GIS and geo\*.
+
+## Tester le site en local
+
+Si vous voulez vérifier que votre contribution est valide,
+voici comment tester le site en local.
+
+### Créer un environnement virtuel
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### Installer les dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+### Servir le site en local
+
+```bash
+mkdocs serve -f properdocs.yml
+```
+
+Une fois cette commande lancée, le site sera accessible
+à <http://localhost:8000>. Pour arrêter le server : `ctl + c`
