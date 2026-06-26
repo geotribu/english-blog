@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ### Servir le site en local
 
 ```bash
-mkdocs serve -f properdocs.yml
+properdocs serve -f properdocs.yml
 ```
 
 Une fois cette commande lancée, le site sera accessible
