@@ -30,5 +30,4 @@ pip install -r requirements.txt
 properdocs serve -f properdocs.yml
 ```
 
-Une fois cette commande lancée, le site sera accessible
-à <http://localhost:8000>. Pour arrêter le server : `ctl + c`
+Une fois cette commande lancée, le site sera accessible à <http://localhost:8000>. Pour arrêter le server : `ctl + c`
