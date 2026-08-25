@@ -72,7 +72,7 @@ Furthermore, the management of updates is automated: collections are downloaded 
 
 To share your resources, you can [create your own Git repository](https://qgis-contribution.github.io/QGIS-ResourceSharing/authoring/creating-repository.html) or contribute to an existing repository.
 
-_Many thanks to [Julien](../../team/julien-moura.md) and [Loïc](../../team/loic-bartoletti.md) for discovering the tool!_
+_Many thanks to [Julien](https://geotribu.fr/team/julien-moura/) and [Loïc](https://geotribu.fr/team/loic-bartoletti/) for discovering the tool!_
 
 ## Embedding your models into a plugin
 
