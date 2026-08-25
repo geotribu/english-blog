@@ -98,4 +98,4 @@ We explored five methods for sharing your QGIS models.
 Each method has its own specifics and can respond to a particular need.
 The QGIS community is incredibly active and creative in making the use of QGIS ever more efficient.
 
-Were you aware of these different methods? Do you have any other tips for sharing your models? Feel free to share your experiences in the comments!
+Were you aware of these different methods ? Do you have any other tips for sharing your models ? Feel free to share your experiences in the comments !
