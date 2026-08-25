@@ -76,7 +76,7 @@ _Many thanks to [Julien](https://geotribu.fr/team/julien-moura/) and [Loïc](htt
 
 ## Embedding your models into a plugin
 
-The last method is to embed your models into a QGIS plugin.
+The last method is to embed your models into a QGIS plugin.  
 Each plugin can add tools to the "Processing Toolbox" of QGIS, including models. For instance, the [Cadastre](https://plugins.qgis.org/plugins/cadastre/) plugin adds additional processing tools to the toolbox: exploding_head: !
 
 ![Screenshot of the tools from the Cadastre plugin in the Processing Toolbox](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/cadastre_processing.png){: .img-center loading=lazy }
