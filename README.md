@@ -6,28 +6,30 @@
 
 Geotribu in English, translated or original blog posts around GIS and geo\*.
 
-## Tester le site en local
+## How to run site locally
 
-Si vous voulez vérifier que votre contribution est valide,
-voici comment tester le site en local.
+**Remark:** *This is a minimal version of the procedure to run the website locally. For a detailed explanation, have a look at :*
+- *[Install and configure a local version of the Geotribu website](https://contribuer.geotribu.fr/edit/local_edition_setup/)*
+- *[Generate the Geotribu website using Properdocs](https://contribuer.geotribu.fr/internal/generer_les_sites_web_geotribu/)*
 
-### Créer un environnement virtuel
+
+### Create a virtual environment
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### Installer les dépendances
+### Install the dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Servir le site en local
+### Serve the site locally
 
 ```bash
 properdocs serve -f properdocs.yml
 ```
 
-Une fois cette commande lancée, le site sera accessible à <http://localhost:8000>. Pour arrêter le server : `ctl + c`
+Once this command is executed, the site will be accessible at <http://localhost:8000>. To stop the server: `ctl + c`
