@@ -6,7 +6,7 @@ authors:
 categories:
   - Article
 comments: true
-date: 2026-08-01
+date: 2026-09-01
 description: "Discover 5 ways to share your QGIS models: from the paper plane method to plugin integration !"
 icon: fontawesome/regular/paper-plane
 image:
