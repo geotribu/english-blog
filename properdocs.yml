@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://jaywhj.github.io/mkdocs-materialx/schema.json
+
 # Project information
 site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu in English"]
 site_description: >-
@@ -65,7 +67,7 @@ plugins:
         - upload.wikimedia.org/*
         - user-images.githubusercontent.com/**/*.gif
   - search:
-      lang: en
+      provider: pagefind
   - social:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
       cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
