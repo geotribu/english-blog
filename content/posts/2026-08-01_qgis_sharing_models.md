@@ -27,6 +27,11 @@ Finally, after long hours of work and drinking too many cups of coffee, you have
 
 In this article, I will present five methods for sharing your QGIS model.
 
+<!-- more -->
+
+[Leave a comment :fontawesome-solid-comments:](#__comments "Go to comments"){: .md-button }
+{: align=middle }
+
 ## The paper plane method
 
 One of the more creative colleagues on your team will surely find an astonishing method, such as taking a screenshot of the model, printing it, transforming it into a paper plane, and throwing it to the person of his choice. Stunning!
