@@ -4,4 +4,33 @@
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
-Geotribu in English, translated or original blog posts around GIS and geo*.
+Geotribu in English, translated or original blog posts around GIS and geo\*.
+
+## How to run site locally
+
+> [!NOTE]
+> This is a minimal version of the procedure to run the website locally. For a detailed explanation, have a look at :
+>
+> - [Install and configure a local version of the Geotribu website](https://contribuer.geotribu.fr/edit/local_edition_setup/)
+> - [Generate the Geotribu website using Properdocs](https://contribuer.geotribu.fr/internal/generer_les_sites_web_geotribu/)
+
+### Create a virtual environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### Install the dependencies
+
+```bash
+python -m pip install -U -r requirements.txt
+```
+
+### Serve the site locally
+
+```bash
+properdocs serve -f properdocs.yml
+```
+
+Once this command is executed, the site will be accessible at <http://localhost:8000>. To stop the server: `ctl + c`
