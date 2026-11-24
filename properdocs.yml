@@ -44,6 +44,53 @@ plugins:
       draft_if_future_date: !ENV [MKDOCS_PLUGIN_BLOG_DRAFT_FUTURE_DATE, false]
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
       post_date_format: long
+      # complete by hooks/mkdocs/G007_social_share_buttons.py
+      share_links:
+        bluesky:
+          title: Bluesky
+          icon: fontawesome/brands/bluesky
+          link: "https://bsky.app/intent/compose?text={text}"
+          # exta keys for the hook
+          vars:
+            mention: "@geotribu.bsky.social"
+          text: |
+            {post_title}
+
+            {post_description}
+
+            by {post_authors}.
+
+            {hashtags}
+
+            Check it on {mention}: {post_url}
+        linkedin:
+          title: LinkedIn
+          icon: fontawesome/brands/linkedin
+          link: "https://www.linkedin.com/shareArticle?url={post_url}&mini=true&source={site_name}&text={text}"
+          # exta keys for the hook
+          vars:
+            mention: "@Geotribu"
+          text: |
+            Check this blog post {post_title} by {post_authors} on {mention}
+            {post_description}
+
+            {hashtags} {post_tags}
+        mastodon:
+          title: Mastodon
+          icon: fontawesome/brands/mastodon
+          link: "https://mastodonshare.com/share?url={post_url}&text={text}"
+          # exta keys for the hook
+          vars:
+            mention: "@geotribu@mapstodon.space"
+          text: |
+            Check this blog post {post_title} by {post_authors} on {mention}
+            {post_description}
+        reddit:
+          title: Reddit
+          icon: fontawesome/brands/reddit
+          link: "https://www.reddit.com/submit?url={post_url}&title={text}"
+          # exta keys for the hook
+          text: "{post_title} by {post_authors}"
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       cache_dir:
@@ -139,6 +186,9 @@ theme:
 extra:
   comments_url: https://comments.geotribu.fr # isso url
   geotribu_main_site: https://geotribu.fr/
+  # variables shared by all blog share links, see hooks/mkdocs/G007_social_share_buttons.py
+  share_links_vars:
+    hashtags: "#GISTribe"
   url_contribuer: https://contribuer.geotribu.fr/
 
 extra_css:
